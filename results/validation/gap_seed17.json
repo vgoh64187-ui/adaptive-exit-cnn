@@ -1,0 +1,76 @@
+{
+  "run": "gap_seed17",
+  "head": "gap",
+  "kd": 0.0,
+  "seed": 17,
+  "completed_epochs": 160,
+  "selected_epoch": 158,
+  "validation_outputs": [
+    {
+      "output": 1,
+      "correct": 3548,
+      "n": 5000,
+      "accuracy": 0.7096
+    },
+    {
+      "output": 2,
+      "correct": 3768,
+      "n": 5000,
+      "accuracy": 0.7536
+    },
+    {
+      "output": 3,
+      "correct": 3779,
+      "n": 5000,
+      "accuracy": 0.7558
+    }
+  ],
+  "validation_precision": "FP32",
+  "training_selection_score": 0.7395999999999999,
+  "training_selection_precision": "AMP on CUDA; see training environment",
+  "scope": "5000 validation images used for model development, NOT final official test accuracy",
+  "profile": {
+    "parameters": 11258732,
+    "backbone_macs": 555468800,
+    "exit_macs": [
+      286994944,
+      421238272,
+      555507200
+    ],
+    "components": {
+      "stem.0": 1769472,
+      "stages.0.0.conv1": 37748736,
+      "stages.0.0.conv2": 37748736,
+      "stages.0.1.conv1": 37748736,
+      "stages.0.1.conv2": 37748736,
+      "stages.1.0.conv1": 18874368,
+      "stages.1.0.conv2": 37748736,
+      "stages.1.0.shortcut.0": 2097152,
+      "stages.1.1.conv1": 37748736,
+      "stages.1.1.conv2": 37748736,
+      "exits.0.fc": 12800,
+      "stages.2.0.conv1": 18874368,
+      "stages.2.0.conv2": 37748736,
+      "stages.2.0.shortcut.0": 2097152,
+      "stages.2.1.conv1": 37748736,
+      "stages.2.1.conv2": 37748736,
+      "exits.1.fc": 25600,
+      "stages.3.0.conv1": 18874368,
+      "stages.3.0.conv2": 37748736,
+      "stages.3.0.shortcut.0": 2097152,
+      "stages.3.1.conv1": 37748736,
+      "stages.3.1.conv2": 37748736,
+      "final_head.fc": 51200
+    },
+    "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs"
+  },
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "sources": {
+    "config.json": "268e774672caca3a063fb0b75bbe3630868990068e0184a3ec9ad48ae3e8cd8b",
+    "history.jsonl": "ee623533bf7af972c422e6a2413feeeb37e22985bf50cb135296b86bdf197382",
+    "best.pt": "5f3bb9e71c5608f7763656868c6d6b2483491cd0888cd065b0485de9b933bdd4",
+    "policies.json": "0a1f969b18749366ec1ee8920e5403c061bcb4284be65da404b8954dcb78dc4e",
+    "validation_predictions.npz": "161d7418f18d0306206489b17ce41087a33fcc1d8e52b68341ee621841811053",
+    "validation_predictions.metadata.json": "4dc294205a01b6dca9ab2cb9f487f46f368977524c5cbba877f4efd77d392e3e"
+  }
+}

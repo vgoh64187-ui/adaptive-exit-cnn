@@ -1,0 +1,84 @@
+{
+  "run": "lg_seed17",
+  "head": "local_global",
+  "kd": 0.0,
+  "seed": 17,
+  "completed_epochs": 160,
+  "selected_epoch": 149,
+  "validation_outputs": [
+    {
+      "output": 1,
+      "correct": 3237,
+      "n": 5000,
+      "accuracy": 0.6474
+    },
+    {
+      "output": 2,
+      "correct": 3745,
+      "n": 5000,
+      "accuracy": 0.749
+    },
+    {
+      "output": 3,
+      "correct": 3800,
+      "n": 5000,
+      "accuracy": 0.76
+    }
+  ],
+  "validation_precision": "FP32",
+  "training_selection_score": 0.7187333333333333,
+  "training_selection_precision": "AMP on CUDA; see training environment",
+  "scope": "5000 validation images used for model development, NOT final official test accuracy",
+  "profile": {
+    "parameters": 11427566,
+    "backbone_macs": 555468800,
+    "exit_macs": [
+      287388160,
+      421942784,
+      556211712
+    ],
+    "components": {
+      "stem.0": 1769472,
+      "stages.0.0.conv1": 37748736,
+      "stages.0.0.conv2": 37748736,
+      "stages.0.1.conv1": 37748736,
+      "stages.0.1.conv2": 37748736,
+      "stages.1.0.conv1": 18874368,
+      "stages.1.0.conv2": 37748736,
+      "stages.1.0.shortcut.0": 2097152,
+      "stages.1.1.conv1": 37748736,
+      "stages.1.1.conv2": 37748736,
+      "exits.0.local.0": 294912,
+      "exits.0.pool.score": 32768,
+      "exits.0.pool": 32768,
+      "exits.0.gate": 32768,
+      "exits.0.fc": 12800,
+      "stages.2.0.conv1": 18874368,
+      "stages.2.0.conv2": 37748736,
+      "stages.2.0.shortcut.0": 2097152,
+      "stages.2.1.conv1": 37748736,
+      "stages.2.1.conv2": 37748736,
+      "exits.1.local.0": 147456,
+      "exits.1.pool.score": 16384,
+      "exits.1.pool": 16384,
+      "exits.1.gate": 131072,
+      "exits.1.fc": 25600,
+      "stages.3.0.conv1": 18874368,
+      "stages.3.0.conv2": 37748736,
+      "stages.3.0.shortcut.0": 2097152,
+      "stages.3.1.conv1": 37748736,
+      "stages.3.1.conv2": 37748736,
+      "final_head.fc": 51200
+    },
+    "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs"
+  },
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "sources": {
+    "config.json": "477d61c5f7ff5601124c3c8a6fc14960c4afb8e7fff98306bed1050270705ca3",
+    "history.jsonl": "d1e4e246f8c78f9d6b0faaace3582def634b5223a7e5287eee62e1124d554826",
+    "best.pt": "d2fdfd6ebba16934da41f554acad6ce1846603d828335df45a2dbaa3e35f0e66",
+    "policies.json": "b189b823b6a9e474539f8e1953bc2ea8cde80b35f32c8d83ce2ffdfc7b685fd5",
+    "validation_predictions.npz": "21e68a2a3490c4bc9b422e40b9439d65dc960a7b09375d73ccc425c7ce5f6746",
+    "validation_predictions.metadata.json": "a4aa416dca581229c60073249f09e0f2eed8b0c3552aa27f5785033d6af35b22"
+  }
+}
