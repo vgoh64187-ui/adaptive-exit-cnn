@@ -1,0 +1,15 @@
+{
+  "train": {
+    "n": 45000,
+    "per_class": 450
+  },
+  "calibration": {
+    "n": 2500,
+    "per_class": 25
+  },
+  "selection": {
+    "n": 2500,
+    "per_class": 25
+  },
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5"
+}

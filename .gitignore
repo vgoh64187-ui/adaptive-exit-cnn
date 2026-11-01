@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+runs/
+tmp/
+*.pt
+*.pth
+*.zip
+*.tar.gz
+reference_private/

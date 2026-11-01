@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-31T22:51:51.281159+08:00",
+  "model": "smoke_lg_seed42",
+  "purpose": "engineering verification only; not paper accuracy or latency evidence",
+  "checks": [
+    "browser budget prediction and stage skipping visible",
+    "browser consensus toggle",
+    "browser full-backbone mode and disabled budget controls",
+    "browser JSON export verified",
+    "HTTP predictions identical to CLI for the same sample and policy",
+    "uploaded sample identical to dataset path",
+    "invalid sample index and unavailable budget rejected"
+  ],
+  "screenshot": "tmp/application_development.jpg",
+  "formal_model_demonstration_pending": true
+}

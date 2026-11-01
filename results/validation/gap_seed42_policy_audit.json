@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-01T09:03:48.122112+08:00",
+  "scope": "GAP validation strategy-selection subset; no official test access",
+  "n": 2500,
+  "policies_checked": 21,
+  "passed": true,
+  "prediction_sha256": "aaf5f04fe033b933f51cb858a6aa7750c32cca0e259af6939d5e0c8387cda00e",
+  "policy_sha256": "8cb89c00a2d34c1528750c1e9988b7958f1d78d566d59fea4f82dc99eb3029df",
+  "audit_source_sha256": "a30039c4ccebcc2d84dbd8b2872ff0b5e99e7ffe1be718a2c72f45bee2c9a526",
+  "checks": [
+    "integer correct counts",
+    "exit distribution",
+    "weighted cumulative MACs",
+    "harmful/beneficial error transfer",
+    "conditional early error rate"
+  ]
+}

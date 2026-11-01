@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="728.39952pt" height="231.59952pt" viewBox="0 0 728.39952 231.59952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-31T22:24:32.845609</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 231.59952 
+L 728.39952 231.59952 
+L 728.39952 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 54.2 192.39952 
+L 341.069357 192.39952 
+L 341.069357 23.5125 
+L 54.2 23.5125 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 54.2 184.722837 
+L 106.358065 184.722837 
+L 106.358065 159.133895 
+L 54.2 159.133895 
+z
+" clip-path="url(#pe535e39e9a)" style="fill: #838992"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 54.2 142.0746 
+L 67.239516 142.0746 
+L 67.239516 116.485657 
+L 54.2 116.485657 
+z
+" clip-path="url(#pe535e39e9a)" style="fill: #39956d"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 54.2 99.426363 
+L 67.239516 99.426363 
+L 67.239516 73.83742 
+L 54.2 73.83742 
+z
+" clip-path="url(#pe535e39e9a)" style="fill: #e48d32"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 54.2 56.778125 
+L 288.911292 56.778125 
+L 288.911292 31.189183 
+L 54.2 31.189183 
+z
+" clip-path="url(#pe535e39e9a)" style="fill: #397eb5"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mbb54f81af5" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbb54f81af5" x="54.2" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="54.2" y="207.99327" transform="rotate(-0 54.2 207.99327)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mbb54f81af5" x="106.358065" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="106.358065" y="207.99327" transform="rotate(-0 106.358065 207.99327)">10000</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mbb54f81af5" x="158.51613" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="158.51613" y="207.99327" transform="rotate(-0 158.51613 207.99327)">20000</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mbb54f81af5" x="210.674194" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="210.674194" y="207.99327" transform="rotate(-0 210.674194 207.99327)">30000</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mbb54f81af5" x="262.832259" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="262.832259" y="207.99327" transform="rotate(-0 262.832259 207.99327)">40000</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mbb54f81af5" x="314.990324" y="192.39952" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="314.990324" y="207.99327" transform="rotate(-0 314.990324 207.99327)">50000</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="197.634678" y="222.852645" transform="rotate(-0 197.634678 222.852645)">图像数量</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="m7df8426fd2" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7df8426fd2" x="54.2" y="171.928366" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: end" x="47.2" y="176.225241" transform="rotate(-0 47.2 176.225241)">官方测试</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m7df8426fd2" x="54.2" y="129.280129" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: end" x="47.2" y="133.577004" transform="rotate(-0 47.2 133.577004)">策略选择</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m7df8426fd2" x="54.2" y="86.631891" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: end" x="47.2" y="90.928766" transform="rotate(-0 47.2 90.928766)">温度校准</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m7df8426fd2" x="54.2" y="43.983654" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: end" x="47.2" y="48.280529" transform="rotate(-0 47.2 48.280529)">训练</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 54.2 192.39952 
+L 54.2 23.5125 
+" style="fill: none; stroke: #000000; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 54.2 192.39952 
+L 341.069357 192.39952 
+" style="fill: none; stroke: #000000; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: start" x="109.487549" y="175.162741" transform="rotate(-0 109.487549 175.162741)">10,000</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: start" x="70.369" y="132.514504" transform="rotate(-0 70.369 132.514504)">2,500</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: start" x="70.369" y="89.866266" transform="rotate(-0 70.369 89.866266)">2,500</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: start" x="292.040776" y="47.218029" transform="rotate(-0 292.040776 47.218029)">45,000</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="197.634678" y="17.5125" transform="rotate(-0 197.634678 17.5125)">(a) 固定分层划分</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_9">
+    <path d="M 359.457261 99.511659 
+L 452.689802 99.511659 
+L 452.689802 57.289904 
+L 359.457261 57.289904 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #f5f7fa; stroke: #444444; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 482.524215 99.511659 
+L 575.756756 99.511659 
+L 575.756756 57.289904 
+L 482.524215 57.289904 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #f5f7fa; stroke: #444444; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 605.591169 99.511659 
+L 698.82371 99.511659 
+L 698.82371 57.289904 
+L 605.591169 57.289904 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #f5f7fa; stroke: #444444; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 605.591169 177.621906 
+L 698.82371 177.621906 
+L 698.82371 135.400151 
+L 605.591169 135.400151 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #f5f7fa; stroke: #444444; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 454.689203 78.400782 
+Q 467.606049 78.400782 479.40486 78.400782 
+" clip-path="url(#p2c302b26aa)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 474.60486 76.000782 
+L 479.40486 78.400782 
+L 474.60486 80.800782 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 577.756157 78.400782 
+Q 590.673003 78.400782 602.471814 78.400782 
+" clip-path="url(#p2c302b26aa)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 597.671814 76.000782 
+L 602.471814 78.400782 
+L 597.671814 80.800782 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 652.20744 101.513739 
+Q 652.20744 117.457974 652.20744 132.284175 
+" clip-path="url(#p2c302b26aa)" style="fill: none; stroke: #444444; stroke-linecap: round"/>
+    <path d="M 654.60744 127.484175 
+L 652.20744 132.284175 
+L 649.80744 127.484175 
+z
+" clip-path="url(#p2c302b26aa)" style="fill: #444444; stroke: #444444; stroke-linecap: round"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="406.073532" y="81.994532" transform="rotate(-0 406.073532 81.994532)">训练模型</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="529.140486" y="81.994532" transform="rotate(-0 529.140486 81.994532)">验证选模</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="652.20744" y="81.994532" transform="rotate(-0 652.20744 81.994532)">校准与选策略</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="652.20744" y="160.104778" transform="rotate(-0 652.20744 160.104778)">冻结后测试</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'" transform="translate(426.33631 154.401653)">各对照使用相同划分</text>
+    <text style="font-size: 10px; font-family: 'SimSun', 'DejaVu Sans'" transform="translate(416.33631 165.807903)">测试标签不参与模型选择</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 12px; font-family: 'SimSun', 'DejaVu Sans'; text-anchor: middle" x="534.734438" y="17.5125" transform="rotate(-0 534.734438 17.5125)">(b) 选模与最终评价的顺序</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe535e39e9a">
+   <rect x="54.2" y="23.5125" width="286.869357" height="168.88702"/>
+  </clipPath>
+  <clipPath id="p2c302b26aa">
+   <rect x="348.269357" y="23.5125" width="372.930163" height="168.88702"/>
+  </clipPath>
+ </defs>
+</svg>

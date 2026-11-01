@@ -1,0 +1,34 @@
+{
+  "scope": "Engineering check with fully trained GAP weights; NOT formal latency evidence",
+  "weights_sha256": "b08765dd0e6f454bc752e0ccb99d47c089bdc7283143335496a6489961c6647f",
+  "sample_indices": [
+    2280,
+    13763,
+    41097,
+    18692,
+    19988,
+    2829,
+    33109,
+    22858
+  ],
+  "stage_sample_visits": [
+    8,
+    8,
+    3,
+    0
+  ],
+  "exits": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "cached_route_disagreements": 0,
+  "max_same_exit_logit_difference": 0.0,
+  "timing_excluded_reason": "Concurrent main training; eight-image engineering subset",
+  "passed": true
+}

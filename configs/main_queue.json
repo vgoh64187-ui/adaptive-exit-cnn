@@ -1,0 +1,99 @@
+{
+  "description": "Three-seed main comparisons; validation only until protocol freeze",
+  "epochs": 160,
+  "batch_size": 128,
+  "workers": 2,
+  "minimum_baseline_validation": 0.7,
+  "runs": [
+    {
+      "name": "baseline_seed42",
+      "head": "baseline",
+      "seed": 42,
+      "kd": 0.0
+    },
+    {
+      "name": "gap_seed42",
+      "head": "gap",
+      "seed": 42,
+      "kd": 0.0
+    },
+    {
+      "name": "mlp_seed42",
+      "head": "mlp",
+      "seed": 42,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_seed42",
+      "head": "local_global",
+      "seed": 42,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_kd_seed42",
+      "head": "local_global",
+      "seed": 42,
+      "kd": 0.5
+    },
+    {
+      "name": "baseline_seed17",
+      "head": "baseline",
+      "seed": 17,
+      "kd": 0.0
+    },
+    {
+      "name": "gap_seed17",
+      "head": "gap",
+      "seed": 17,
+      "kd": 0.0
+    },
+    {
+      "name": "mlp_seed17",
+      "head": "mlp",
+      "seed": 17,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_seed17",
+      "head": "local_global",
+      "seed": 17,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_kd_seed17",
+      "head": "local_global",
+      "seed": 17,
+      "kd": 0.5
+    },
+    {
+      "name": "baseline_seed73",
+      "head": "baseline",
+      "seed": 73,
+      "kd": 0.0
+    },
+    {
+      "name": "gap_seed73",
+      "head": "gap",
+      "seed": 73,
+      "kd": 0.0
+    },
+    {
+      "name": "mlp_seed73",
+      "head": "mlp",
+      "seed": 73,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_seed73",
+      "head": "local_global",
+      "seed": 73,
+      "kd": 0.0
+    },
+    {
+      "name": "lg_kd_seed73",
+      "head": "local_global",
+      "seed": 73,
+      "kd": 0.5
+    }
+  ]
+}

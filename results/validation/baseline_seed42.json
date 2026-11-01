@@ -1,0 +1,62 @@
+{
+  "run": "baseline_seed42",
+  "head": "baseline",
+  "kd": 0.0,
+  "seed": 42,
+  "completed_epochs": 160,
+  "selected_epoch": 151,
+  "validation_outputs": [
+    {
+      "output": 1,
+      "correct": 3897,
+      "n": 5000,
+      "accuracy": 0.7794
+    }
+  ],
+  "validation_precision": "FP32",
+  "training_selection_score": 0.7792,
+  "training_selection_precision": "AMP on CUDA; see training environment",
+  "scope": "5000 validation images used for model development, NOT final official test accuracy",
+  "profile": {
+    "parameters": 11220132,
+    "backbone_macs": 555468800,
+    "exit_macs": [
+      286982144,
+      421199872,
+      555468800
+    ],
+    "components": {
+      "stem.0": 1769472,
+      "stages.0.0.conv1": 37748736,
+      "stages.0.0.conv2": 37748736,
+      "stages.0.1.conv1": 37748736,
+      "stages.0.1.conv2": 37748736,
+      "stages.1.0.conv1": 18874368,
+      "stages.1.0.conv2": 37748736,
+      "stages.1.0.shortcut.0": 2097152,
+      "stages.1.1.conv1": 37748736,
+      "stages.1.1.conv2": 37748736,
+      "stages.2.0.conv1": 18874368,
+      "stages.2.0.conv2": 37748736,
+      "stages.2.0.shortcut.0": 2097152,
+      "stages.2.1.conv1": 37748736,
+      "stages.2.1.conv2": 37748736,
+      "stages.3.0.conv1": 18874368,
+      "stages.3.0.conv2": 37748736,
+      "stages.3.0.shortcut.0": 2097152,
+      "stages.3.1.conv1": 37748736,
+      "stages.3.1.conv2": 37748736,
+      "final_head.fc": 51200
+    },
+    "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs"
+  },
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "sources": {
+    "config.json": "e3e11b3fc0d23c2b44e1857faf6c85ee959aa2491faa2e0366dbf86582f65b49",
+    "history.jsonl": "4010e71e141897e42086682491f1fd8c8f741fbb15f511d696fc03330942f626",
+    "best.pt": "4b49a5fe956c33be1916f5a9a56883605a41bef37a75fde25344bd906c689ce2",
+    "policies.json": "6200fe54f842596e1c4e77a110a6c3227a1261d649e461ee112ea783e2dd0f5a",
+    "validation_predictions.npz": "8fe3c40fca37ef097f1e60be58dc7ae2867cca111f54b9150e5235e38eba5d4e",
+    "validation_predictions.metadata.json": "22adadd5528e5fb29bd525ab7d57c64b5d0d7e0d5dad0508543e65bb45566e74"
+  }
+}

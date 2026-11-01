@@ -1,0 +1,52 @@
+{
+  "scope": "predeclared settings verified against completed seed42 run configs; no test performance",
+  "sources": {
+    "configs\\main_queue.json": "9b0d0682b7e78ac3bb452a73a2643d7384b1d76e81d56facc68470d32362fb1c",
+    "data\\split_cifar100.json": "99f8f3cb6a44744ec40fcea7fd619897d4320dc3e88ba1ccf942a705f82b6c7c",
+    "runs\\baseline_seed42\\config.json": "e3e11b3fc0d23c2b44e1857faf6c85ee959aa2491faa2e0366dbf86582f65b49",
+    "runs\\gap_seed42\\config.json": "c7b00705ca3ea3ca778d78a076e7173caa2f3803880f75069671fab816ed7c56",
+    "train.py": "770cc4596b76c6d089232f6fe52ec928bf3bb1b538b0adcdc0ccd4bc42a8fd0f",
+    "src\\data.py": "8120b57e25c0a1243115a12219492549fa1620c8e15e4c86057b7e33b9042d77"
+  },
+  "training_source_sha256": "6d92efeea4a6182777c6170c57108c6b2a982e22e42657e0f412fc7ca86d62ae",
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "entries": [
+    {
+      "item": "数据划分（训练/温度校准/策略选择）",
+      "value": "45,000 / 2,500 / 2,500"
+    },
+    {
+      "item": "训练随机种子",
+      "value": "17 / 42 / 73"
+    },
+    {
+      "item": "模型组数与训练次数",
+      "value": "5 组 / 15 次"
+    },
+    {
+      "item": "训练轮次 / 批量大小",
+      "value": "160 / 128"
+    },
+    {
+      "item": "SGD 初始学习率 / 权重衰减",
+      "value": "0.1 / 0.0005"
+    },
+    {
+      "item": "动量与学习率调度",
+      "value": "Nesterov 0.9；前 5 轮预热，随后余弦衰减"
+    },
+    {
+      "item": "自蒸馏温度 / 系数",
+      "value": "3 / 0.5（仅融合+蒸馏组）"
+    },
+    {
+      "item": "模型选择准则",
+      "value": "单出口：验证准确率；多出口：各出口验证准确率均值"
+    },
+    {
+      "item": "混合精度",
+      "value": "CUDA 训练启用；验证预测缓存与正式推理采用 FP32"
+    }
+  ],
+  "output_sha256": "0b5efe1a44db84da319533c1b279331d4605832269db16920f7c2f31219d8681"
+}

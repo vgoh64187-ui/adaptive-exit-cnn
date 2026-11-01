@@ -1,0 +1,81 @@
+{
+  "description": "Predeclared deployment study using seed42; all main training and frozen testing must finish first",
+  "devices": [
+    "cpu",
+    "cuda"
+  ],
+  "batch_sizes": [
+    1,
+    32
+  ],
+  "samples": 256,
+  "warmup": 32,
+  "repeats": 3,
+  "threads": 6,
+  "output": "results/latency/main",
+  "cases": [
+    {
+      "name": "baseline_confidence75",
+      "run": "baseline_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": false
+    },
+    {
+      "name": "gap_confidence75",
+      "run": "gap_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": false
+    },
+    {
+      "name": "mlp_confidence75",
+      "run": "mlp_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": false
+    },
+    {
+      "name": "lg_confidence75",
+      "run": "lg_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": false
+    },
+    {
+      "name": "lg_kd_confidence75",
+      "run": "lg_kd_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": false
+    },
+    {
+      "name": "lg_kd_consensus65",
+      "run": "lg_kd_seed42",
+      "budget": 0.65,
+      "consensus": true,
+      "full_depth": false
+    },
+    {
+      "name": "lg_kd_consensus75",
+      "run": "lg_kd_seed42",
+      "budget": 0.75,
+      "consensus": true,
+      "full_depth": false
+    },
+    {
+      "name": "lg_kd_consensus85",
+      "run": "lg_kd_seed42",
+      "budget": 0.85,
+      "consensus": true,
+      "full_depth": false
+    },
+    {
+      "name": "lg_kd_backbone_only",
+      "run": "lg_kd_seed42",
+      "budget": 0.75,
+      "consensus": false,
+      "full_depth": true
+    }
+  ]
+}

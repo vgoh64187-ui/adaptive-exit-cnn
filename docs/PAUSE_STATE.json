@@ -1,0 +1,36 @@
+{
+  "status": "paused_by_user",
+  "saved_at": "2026-10-31T23:28:13.435911+08:00",
+  "runs": [
+    {
+      "run": "baseline_seed42",
+      "completed_epochs": 160,
+      "target_epochs": 160,
+      "selected_epoch": 151,
+      "last_checkpoint_sha256": "0623d44e40dd9a7b1d4eef63781fe00507109611b57eecc8bb1d95109e7e1386",
+      "best_checkpoint_sha256": "4b49a5fe956c33be1916f5a9a56883605a41bef37a75fde25344bd906c689ce2",
+      "source_sha256": "6d92efeea4a6182777c6170c57108c6b2a982e22e42657e0f412fc7ca86d62ae",
+      "checkpoint_state_verified": true,
+      "policies_ready": true
+    },
+    {
+      "run": "gap_seed42",
+      "completed_epochs": 160,
+      "target_epochs": 160,
+      "selected_epoch": 151,
+      "last_checkpoint_sha256": "7c885e711ea1b1bfdf013474ad6d7261a645f6412bcad515308c7718faf85498",
+      "best_checkpoint_sha256": "b08765dd0e6f454bc752e0ccb99d47c089bdc7283143335496a6489961c6647f",
+      "source_sha256": "6d92efeea4a6182777c6170c57108c6b2a982e22e42657e0f412fc7ca86d62ae",
+      "checkpoint_state_verified": true,
+      "policies_ready": false
+    }
+  ],
+  "queue_paused": true,
+  "active_processes": [],
+  "next_action": "Validate and calibrate completed gap_seed42, then continue remaining models and seeds via main_queue.json.",
+  "resume_commands": [
+    "Remove-Item -LiteralPath runs/QUEUE_PAUSE",
+    "& '..\\六个神经网络实验\\.runenv\\Scripts\\python.exe' run_queue.py configs/main_queue.json"
+  ],
+  "notes": "Resume only after explicit user request. Both runs finished 160 epochs. GAP validation/calibration is pending. No official test accessed; protocol not frozen. Checkpoints remain local and excluded from Git."
+}

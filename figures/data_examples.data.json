@@ -1,0 +1,33 @@
+{
+  "duty": "展示百类小尺寸图像的对象与背景差异",
+  "sources": [
+    {
+      "path": "data\\split_cifar100.json",
+      "sha256": "99f8f3cb6a44744ec40fcea7fd619897d4320dc3e88ba1ccf942a705f82b6c7c"
+    }
+  ],
+  "source_partition": "training",
+  "sample_indices": [
+    378,
+    121,
+    4,
+    112,
+    62,
+    11,
+    240,
+    32,
+    300,
+    102,
+    144,
+    342,
+    162,
+    0,
+    107,
+    16,
+    211,
+    86,
+    83,
+    65
+  ],
+  "rule": "seed17 selects 20 classes; first fixed training index per class"
+}

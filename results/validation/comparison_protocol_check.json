@@ -1,0 +1,35 @@
+{
+  "scope": "Completed validation strategies only; official test not evaluated",
+  "runs": [
+    {
+      "run": "gap_seed42",
+      "policy_sha256": "8cb89c00a2d34c1528750c1e9988b7958f1d78d566d59fea4f82dc99eb3029df",
+      "policy_count": 21,
+      "counts": {
+        "fixed_exit_1:False": 1,
+        "fixed_exit_2:False": 1,
+        "full_depth:False": 1,
+        "budget:False": 6,
+        "accuracy_constraint:False": 3,
+        "budget:True": 6,
+        "accuracy_constraint:True": 3
+      }
+    },
+    {
+      "run": "mlp_seed42",
+      "policy_sha256": "ed0f84630cb7b1ac6e0d95d10df7f5e94bf31ec3a1280bd284ce3c22d6145fa9",
+      "policy_count": 21,
+      "counts": {
+        "fixed_exit_1:False": 1,
+        "fixed_exit_2:False": 1,
+        "full_depth:False": 1,
+        "budget:False": 6,
+        "accuracy_constraint:False": 3,
+        "budget:True": 6,
+        "accuracy_constraint:True": 3
+      }
+    }
+  ],
+  "expected_final_groups": 85,
+  "summary_guard_sha256": "0354366a7ac7ee374e842c1ecf5b0ab7e07b94068e2738c04b4f2b7f475c1e3b"
+}

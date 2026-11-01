@@ -1,0 +1,23 @@
+{
+  "scope": "Read-only review of existing course material; no changes to original files",
+  "sources": [
+    {
+      "path": "..\\实验报告\\神经网络课内实验报告.docx",
+      "sha256": "8562c993c5614431c63dedf4f88fc481307fbcdaa4e831e9528849720be811bd"
+    },
+    {
+      "path": "..\\实验报告\\任务计划.md",
+      "sha256": "650ddfa8c01941a87a3c66c1c3a00f70d77c897fe2ee368147987b2c82292454"
+    },
+    {
+      "path": "..\\六个神经网络实验\\README.md",
+      "sha256": "aec40189ae24a15c2567faa3da4e97164f3b10a8207aa002e980de9388edb5d9"
+    }
+  ],
+  "findings": [
+    "Course report third numbered section is U-Net pedestrian segmentation, followed by U-Net++, YOLOv8, RetinaNet, Faster R-CNN, GAN and LSTM.",
+    "Faster R-CNN and RetinaNet use ResNet50-FPN for object detection; this project uses a handwritten CIFAR-adapted ResNet-18 for 100-class classification and multi-exit experiments.",
+    "The report and six-experiment README do not explicitly map their headings to the instructor’s numbered experiment three."
+  ],
+  "conclusion": "The project differs from the third numbered report section and from the listed detection/segmentation tasks, but no instructor-assigned experiment-three brief was located; formal non-duplication remains unverified."
+}

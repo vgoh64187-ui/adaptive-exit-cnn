@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-01T09:07:56.008162+08:00",
+  "status": "passed_install_tests_smoke_and_pdf",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2",
+    "reportlab": "4.4.9",
+    "all_checked_imports_from_isolated_environment": true
+  },
+  "source_copy": "tmp/repro/source",
+  "source_manifest": "tmp/repro/source_manifest.json",
+  "install_session": 48692,
+  "system_site_packages": false,
+  "initial_failure": "uv first-index dependency resolution pinned requests lookup to PyTorch index; installed version range unavailable there",
+  "correction": "Seed isolated environment with pip, use python -m pip install -r requirements.txt -r requirements-report.txt",
+  "next_steps": [
+    "Complete full training, fixed-policy official test and benchmarks",
+    "Repeat final artifact reproduction after final report and result package are assembled"
+  ],
+  "completed_at": "2026-11-01T09:19:00.183588+08:00",
+  "source_commit": "226ccf9ec1b552c43d8a15a94df23ce92150c06f",
+  "source_files": 90,
+  "source_manifest_sha256": "75daae61282c242132446550a82603d1b4c48707e18211473913c5f226281abf",
+  "pip_check": "No broken requirements found",
+  "tests": {
+    "total": 22,
+    "failures": 0,
+    "errors": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "smoke": {
+    "epochs": 1,
+    "samples": 64,
+    "width": 8,
+    "head": "local_global",
+    "kd": 0.5,
+    "device": "cpu",
+    "scope": "Pipeline verification only, excluded from reported performance",
+    "source_sha256": "6d92efeea4a6182777c6170c57108c6b2a982e22e42657e0f412fc7ca86d62ae",
+    "checkpoint_sha256": "280be72634e367eaf09b9576da70a5c45b749e1d9e7217034c9d09256e8444d6",
+    "history_sha256": "c405b4db83504936bf4aaba51e993a80b6ea884c3d37623fb573080aa78141d6"
+  },
+  "paper": {
+    "expressions": 30,
+    "equations": 6,
+    "pages": 3,
+    "visually_checked_pages": [
+      1,
+      2,
+      3
+    ],
+    "pdf_sha256": "5d58b3d349d36439281f73532d97646bafb58c13a9edf6a5996b4a9f4c518ab2",
+    "source_sha256": "92db148301f987e2c6f4a9e683140fb57e9bb5bb0682cef312f74cf960ab0ed5",
+    "scope": "Methods layout reproduction, not final report"
+  }
+}

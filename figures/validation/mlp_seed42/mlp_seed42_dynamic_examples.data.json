@@ -1,0 +1,171 @@
+{
+  "scope": "validation selection examples; not aggregate accuracy or official test",
+  "selection_rule": "Smallest original index within every nonempty (exit, correctness) stratum",
+  "strata": [
+    {
+      "exit": 1,
+      "correct": true,
+      "count": 848
+    },
+    {
+      "exit": 1,
+      "correct": false,
+      "count": 27
+    },
+    {
+      "exit": 2,
+      "correct": true,
+      "count": 1003
+    },
+    {
+      "exit": 2,
+      "correct": false,
+      "count": 497
+    },
+    {
+      "exit": 3,
+      "correct": true,
+      "count": 33
+    },
+    {
+      "exit": 3,
+      "correct": false,
+      "count": 92
+    }
+  ],
+  "rows": [
+    {
+      "index": 25,
+      "truth": "table",
+      "prediction": "table",
+      "correct": true,
+      "exit": 1,
+      "probability": 0.9229313731193542,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287029112,
+      "cost_ratio": 0.516733094640059
+    },
+    {
+      "index": 687,
+      "truth": "pine_tree",
+      "prediction": "palm_tree",
+      "correct": false,
+      "exit": 1,
+      "probability": 0.9642477035522461,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287029112,
+      "cost_ratio": 0.516733094640059
+    },
+    {
+      "index": 100,
+      "truth": "otter",
+      "prediction": "otter",
+      "correct": true,
+      "exit": 2,
+      "probability": 0.9080623388290405,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421406328,
+      "cost_ratio": 0.7586498611623191
+    },
+    {
+      "index": 108,
+      "truth": "palm_tree",
+      "prediction": "willow_tree",
+      "correct": false,
+      "exit": 2,
+      "probability": 0.7803181409835815,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421406328,
+      "cost_ratio": 0.7586498611623191
+    },
+    {
+      "index": 681,
+      "truth": "orange",
+      "prediction": "orange",
+      "correct": true,
+      "exit": 3,
+      "probability": 0.3261909782886505,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 555675256,
+      "cost_ratio": 1.000371678841368
+    },
+    {
+      "index": 650,
+      "truth": "tulip",
+      "prediction": "tiger",
+      "correct": false,
+      "exit": 3,
+      "probability": 0.19773264229297638,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 555675256,
+      "cost_ratio": 1.000371678841368
+    }
+  ],
+  "weights_sha256": "c3aed518bd8470a95a29d3b5474de1b7a4fbac3b149ed3138da00708933d2e0a",
+  "policy_sha256": "ed0f84630cb7b1ac6e0d95d10df7f5e94bf31ec3a1280bd284ce3c22d6145fa9",
+  "prediction_sha256": "06045cb02a3c059aaff4d22aa6b811a05600bc8c0ae76b77df77919537cefb8b",
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "selected_policy": {
+    "policy": {
+      "thresholds": [
+        0.8788611888885498,
+        0.24057932198047638
+      ],
+      "temperatures": [
+        1.20426344871521,
+        1.280256986618042,
+        1.288086175918579
+      ],
+      "consensus": false,
+      "margin": 0.0
+    },
+    "selection": {
+      "accuracy": 0.753600001335144,
+      "mean_macs": 381087748.8,
+      "cost_ratio": 0.6860650837634805,
+      "exit_counts": [
+        875,
+        1500,
+        125
+      ],
+      "n": 2500,
+      "early_exit_error_rate": 0.22063158452510834,
+      "harmful_early_exit_fraction": 0.012000000104308128,
+      "beneficial_early_exit_fraction": 0.014000000432133675
+    },
+    "criterion": "budget",
+    "budget": 0.75
+  },
+  "execution_device": "cpu",
+  "timing_measured": false
+}

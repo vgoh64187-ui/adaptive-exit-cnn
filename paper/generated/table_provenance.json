@@ -1,0 +1,124 @@
+{
+  "architecture_only": true,
+  "sources": {
+    "results\\architecture\\profiles.json": "2627e5d20deb0c5178ff6c95fae09d91bc56dad0f0fbe80c969a9c6ee53ef34c"
+  },
+  "bindings": [
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/baseline/parameters",
+      "raw": 11220132,
+      "scale": 1,
+      "decimal_places": 0,
+      "formatted": "11,220,132"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/baseline/exit_macs/2",
+      "raw": 555468800,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "555.469"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/gap/parameters",
+      "raw": 11258732,
+      "scale": 1,
+      "decimal_places": 0,
+      "formatted": "11,258,732"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/gap/exit_macs/0",
+      "raw": 286994944,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "286.995"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/gap/exit_macs/1",
+      "raw": 421238272,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "421.238"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/gap/exit_macs/2",
+      "raw": 555507200,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "555.507"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/mlp/parameters",
+      "raw": 11427442,
+      "scale": 1,
+      "decimal_places": 0,
+      "formatted": "11,427,442"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/mlp/exit_macs/0",
+      "raw": 287029112,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "287.029"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/mlp/exit_macs/1",
+      "raw": 421406328,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "421.406"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/mlp/exit_macs/2",
+      "raw": 555675256,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "555.675"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/local_global/parameters",
+      "raw": 11427566,
+      "scale": 1,
+      "decimal_places": 0,
+      "formatted": "11,427,566"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/local_global/exit_macs/0",
+      "raw": 287388160,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "287.388"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/local_global/exit_macs/1",
+      "raw": 421942784,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "421.943"
+    },
+    {
+      "source": "results\\architecture\\profiles.json",
+      "pointer": "/profiles/local_global/exit_macs/2",
+      "raw": 556211712,
+      "scale": 1e-06,
+      "decimal_places": 3,
+      "formatted": "556.212"
+    }
+  ],
+  "output_sha256": {
+    "paper\\generated\\architecture_table.md": "e69e4fb85328403aa32a62ca90e4cace502ad48fdf4993d4613baa6b2ab1c66d"
+  },
+  "notes": "Architecture counts are not measured latency. Test mean cost is reported, not assumed equal to validation target."
+}

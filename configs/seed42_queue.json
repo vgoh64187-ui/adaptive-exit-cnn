@@ -1,0 +1,14 @@
+{
+  "description": "Same-seed structural/learning comparisons; validation only, no test access",
+  "epochs": 160,
+  "batch_size": 128,
+  "workers": 2,
+  "minimum_baseline_validation": 0.70,
+  "runs": [
+    {"name": "baseline_seed42", "head": "baseline", "seed": 42, "kd": 0.0},
+    {"name": "gap_seed42", "head": "gap", "seed": 42, "kd": 0.0},
+    {"name": "mlp_seed42", "head": "mlp", "seed": 42, "kd": 0.0},
+    {"name": "lg_seed42", "head": "local_global", "seed": 42, "kd": 0.0},
+    {"name": "lg_kd_seed42", "head": "local_global", "seed": 42, "kd": 0.5}
+  ]
+}

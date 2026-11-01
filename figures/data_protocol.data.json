@@ -1,0 +1,16 @@
+{
+  "duty": "明确数据职责与防止测试集参与选型",
+  "sources": [
+    {
+      "path": "data\\split_cifar100.json",
+      "sha256": "99f8f3cb6a44744ec40fcea7fd619897d4320dc3e88ba1ccf942a705f82b6c7c"
+    }
+  ],
+  "counts": {
+    "训练": 45000,
+    "温度校准": 2500,
+    "策略选择": 2500,
+    "官方测试": 10000
+  },
+  "official_test_count_source": "CIFAR-100 official dataset specification"
+}

@@ -1,0 +1,320 @@
+{
+  "scope": "Architecture counts at input 1x3x32x32; not trained accuracy or measured latency",
+  "model_source_sha256": "7fca9a49d7c07edb10f2293e5b97ab12696c728f8aa9ce396b9596c757457164",
+  "profiles": {
+    "baseline": {
+      "parameters": 11220132,
+      "backbone_macs": 555468800,
+      "exit_macs": [
+        286982144,
+        421199872,
+        555468800
+      ],
+      "components": {
+        "stem.0": 1769472,
+        "stages.0.0.conv1": 37748736,
+        "stages.0.0.conv2": 37748736,
+        "stages.0.1.conv1": 37748736,
+        "stages.0.1.conv2": 37748736,
+        "stages.1.0.conv1": 18874368,
+        "stages.1.0.conv2": 37748736,
+        "stages.1.0.shortcut.0": 2097152,
+        "stages.1.1.conv1": 37748736,
+        "stages.1.1.conv2": 37748736,
+        "stages.2.0.conv1": 18874368,
+        "stages.2.0.conv2": 37748736,
+        "stages.2.0.shortcut.0": 2097152,
+        "stages.2.1.conv1": 37748736,
+        "stages.2.1.conv2": 37748736,
+        "stages.3.0.conv1": 18874368,
+        "stages.3.0.conv2": 37748736,
+        "stages.3.0.shortcut.0": 2097152,
+        "stages.3.1.conv1": 37748736,
+        "stages.3.1.conv2": 37748736,
+        "final_head.fc": 51200
+      },
+      "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs",
+      "stage_output_shapes": [
+        [
+          64,
+          32,
+          32
+        ],
+        [
+          128,
+          16,
+          16
+        ],
+        [
+          256,
+          8,
+          8
+        ],
+        [
+          512,
+          4,
+          4
+        ]
+      ],
+      "auxiliary_parameters": 0,
+      "auxiliary_full_path_macs": 0,
+      "head_formula_audit": [],
+      "parameter_increase_percent": 0.0,
+      "full_path_mac_increase_percent": 0.0
+    },
+    "gap": {
+      "parameters": 11258732,
+      "backbone_macs": 555468800,
+      "exit_macs": [
+        286994944,
+        421238272,
+        555507200
+      ],
+      "components": {
+        "stem.0": 1769472,
+        "stages.0.0.conv1": 37748736,
+        "stages.0.0.conv2": 37748736,
+        "stages.0.1.conv1": 37748736,
+        "stages.0.1.conv2": 37748736,
+        "stages.1.0.conv1": 18874368,
+        "stages.1.0.conv2": 37748736,
+        "stages.1.0.shortcut.0": 2097152,
+        "stages.1.1.conv1": 37748736,
+        "stages.1.1.conv2": 37748736,
+        "exits.0.fc": 12800,
+        "stages.2.0.conv1": 18874368,
+        "stages.2.0.conv2": 37748736,
+        "stages.2.0.shortcut.0": 2097152,
+        "stages.2.1.conv1": 37748736,
+        "stages.2.1.conv2": 37748736,
+        "exits.1.fc": 25600,
+        "stages.3.0.conv1": 18874368,
+        "stages.3.0.conv2": 37748736,
+        "stages.3.0.shortcut.0": 2097152,
+        "stages.3.1.conv1": 37748736,
+        "stages.3.1.conv2": 37748736,
+        "final_head.fc": 51200
+      },
+      "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs",
+      "stage_output_shapes": [
+        [
+          64,
+          32,
+          32
+        ],
+        [
+          128,
+          16,
+          16
+        ],
+        [
+          256,
+          8,
+          8
+        ],
+        [
+          512,
+          4,
+          4
+        ]
+      ],
+      "auxiliary_parameters": 38600,
+      "auxiliary_full_path_macs": 38400,
+      "head_formula_audit": [
+        {
+          "exit": 1,
+          "channels": 128,
+          "height": 16,
+          "width": 16,
+          "parameters": 12900,
+          "macs": 12800,
+          "analytic_match": true
+        },
+        {
+          "exit": 2,
+          "channels": 256,
+          "height": 8,
+          "width": 8,
+          "parameters": 25700,
+          "macs": 25600,
+          "analytic_match": true
+        }
+      ],
+      "parameter_increase_percent": 0.3440244731523658,
+      "full_path_mac_increase_percent": 0.006913079546501982
+    },
+    "mlp": {
+      "parameters": 11427442,
+      "backbone_macs": 555468800,
+      "exit_macs": [
+        287029112,
+        421406328,
+        555675256
+      ],
+      "components": {
+        "stem.0": 1769472,
+        "stages.0.0.conv1": 37748736,
+        "stages.0.0.conv2": 37748736,
+        "stages.0.1.conv1": 37748736,
+        "stages.0.1.conv2": 37748736,
+        "stages.1.0.conv1": 18874368,
+        "stages.1.0.conv2": 37748736,
+        "stages.1.0.shortcut.0": 2097152,
+        "stages.1.1.conv1": 37748736,
+        "stages.1.1.conv2": 37748736,
+        "exits.0.fc.0": 26368,
+        "exits.0.fc.2": 20600,
+        "stages.2.0.conv1": 18874368,
+        "stages.2.0.conv2": 37748736,
+        "stages.2.0.shortcut.0": 2097152,
+        "stages.2.1.conv1": 37748736,
+        "stages.2.1.conv2": 37748736,
+        "exits.1.fc.0": 114688,
+        "exits.1.fc.2": 44800,
+        "stages.3.0.conv1": 18874368,
+        "stages.3.0.conv2": 37748736,
+        "stages.3.0.shortcut.0": 2097152,
+        "stages.3.1.conv1": 37748736,
+        "stages.3.1.conv2": 37748736,
+        "final_head.fc": 51200
+      },
+      "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs",
+      "stage_output_shapes": [
+        [
+          64,
+          32,
+          32
+        ],
+        [
+          128,
+          16,
+          16
+        ],
+        [
+          256,
+          8,
+          8
+        ],
+        [
+          512,
+          4,
+          4
+        ]
+      ],
+      "auxiliary_parameters": 207310,
+      "auxiliary_full_path_macs": 206456,
+      "head_formula_audit": [
+        {
+          "exit": 1,
+          "channels": 128,
+          "height": 16,
+          "width": 16,
+          "parameters": 47274,
+          "macs": 46968,
+          "analytic_match": true
+        },
+        {
+          "exit": 2,
+          "channels": 256,
+          "height": 8,
+          "width": 8,
+          "parameters": 160036,
+          "macs": 159488,
+          "analytic_match": true
+        }
+      ],
+      "parameter_increase_percent": 1.8476609722595063,
+      "full_path_mac_increase_percent": 0.0371678841367868
+    },
+    "local_global": {
+      "parameters": 11427566,
+      "backbone_macs": 555468800,
+      "exit_macs": [
+        287388160,
+        421942784,
+        556211712
+      ],
+      "components": {
+        "stem.0": 1769472,
+        "stages.0.0.conv1": 37748736,
+        "stages.0.0.conv2": 37748736,
+        "stages.0.1.conv1": 37748736,
+        "stages.0.1.conv2": 37748736,
+        "stages.1.0.conv1": 18874368,
+        "stages.1.0.conv2": 37748736,
+        "stages.1.0.shortcut.0": 2097152,
+        "stages.1.1.conv1": 37748736,
+        "stages.1.1.conv2": 37748736,
+        "exits.0.local.0": 294912,
+        "exits.0.pool.score": 32768,
+        "exits.0.pool": 32768,
+        "exits.0.gate": 32768,
+        "exits.0.fc": 12800,
+        "stages.2.0.conv1": 18874368,
+        "stages.2.0.conv2": 37748736,
+        "stages.2.0.shortcut.0": 2097152,
+        "stages.2.1.conv1": 37748736,
+        "stages.2.1.conv2": 37748736,
+        "exits.1.local.0": 147456,
+        "exits.1.pool.score": 16384,
+        "exits.1.pool": 16384,
+        "exits.1.gate": 131072,
+        "exits.1.fc": 25600,
+        "stages.3.0.conv1": 18874368,
+        "stages.3.0.conv2": 37748736,
+        "stages.3.0.shortcut.0": 2097152,
+        "stages.3.1.conv1": 37748736,
+        "stages.3.1.conv2": 37748736,
+        "final_head.fc": 51200
+      },
+      "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs",
+      "stage_output_shapes": [
+        [
+          64,
+          32,
+          32
+        ],
+        [
+          128,
+          16,
+          16
+        ],
+        [
+          256,
+          8,
+          8
+        ],
+        [
+          512,
+          4,
+          4
+        ]
+      ],
+      "auxiliary_parameters": 207434,
+      "auxiliary_full_path_macs": 742912,
+      "head_formula_audit": [
+        {
+          "exit": 1,
+          "channels": 128,
+          "height": 16,
+          "width": 16,
+          "parameters": 47333,
+          "macs": 406016,
+          "analytic_match": true
+        },
+        {
+          "exit": 2,
+          "channels": 256,
+          "height": 8,
+          "width": 8,
+          "parameters": 160101,
+          "macs": 336896,
+          "analytic_match": true
+        }
+      ],
+      "parameter_increase_percent": 1.8487661285981305,
+      "full_path_mac_increase_percent": 0.133745045626325
+    }
+  },
+  "matched_capacity_difference_parameters": 124
+}
