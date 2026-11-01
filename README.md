@@ -138,7 +138,7 @@ Windows 下先安装 `requirements.txt` 与 `requirements-report.txt`。以下�
 .venv/Scripts/python.exe paper/build_pdf.py paper/report_draft.md --math-dir tmp/report_math --output output/pdf/report.pdf
 ```
 
-正文数值审计见 `paper/generated/report_audit.json`；表格数值来源见 `paper/generated/table_provenance.json`，图像对应的 `.data.json` 保存原始数值及来源。重新训练或重新生成全部图表需要配套运行文件；已有论文图可直接用于上述排版。模型权重副本和校验方式见 `output/weights/README.md`。
+正文数值审计见 `paper/generated/report_audit.json`；表格数值来源见 `paper/generated/table_provenance.json`，图像对应的 `.data.json` 保存原始数值及来源。重新训练或重新生成全部图表需要配套运行文件；已有论文图可直接用于上述排版。本机模型权重副本、配套策略和直接运行的恢复命令见 `output/weights/README.md`。
 
 ## 文件组织
 

@@ -9,3 +9,5 @@ tmp/
 *.zip
 *.tar.gz
 reference_private/
+
+output/inference_runs/
