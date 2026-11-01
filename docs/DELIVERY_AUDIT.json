@@ -1,0 +1,9 @@
+{
+  "tested_groups": 85,
+  "completed_runs": 15,
+  "verified_weight_policy_pairs": 15,
+  "narrative_checks": 41,
+  "report_sha256": "301caa7d1b28a615021706a99c60958ea4235b13dc6a6c080284f4c06bb648f9",
+  "repo": "https://github.com/vgoh64187-ui/adaptive-exit-cnn",
+  "scope": "Weights and policies checked locally against audited final summary; does not imply weights are uploaded or that experiment three identity is known."
+}
