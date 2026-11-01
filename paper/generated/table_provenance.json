@@ -1,7 +1,8 @@
 {
-  "architecture_only": true,
+  "architecture_only": false,
   "sources": {
-    "results\\architecture\\profiles.json": "2627e5d20deb0c5178ff6c95fae09d91bc56dad0f0fbe80c969a9c6ee53ef34c"
+    "results\\architecture\\profiles.json": "2627e5d20deb0c5178ff6c95fae09d91bc56dad0f0fbe80c969a9c6ee53ef34c",
+    "results\\final\\summary.json": "ab774179ac3851145a97439851b428a0be38ea00f150ce77a9e3e97d61055df7"
   },
   "bindings": [
     {
@@ -115,10 +116,852 @@
       "scale": 1e-06,
       "decimal_places": 3,
       "formatted": "556.212"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/final_exit_accuracy_mean",
+      "raw": 0.7718999981880188,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "77.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/final_exit_accuracy_std",
+      "raw": 0.0004582750819893117,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.05"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/exit1_accuracy_mean",
+      "raw": 0.7063000003496805,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "70.63"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/exit1_accuracy_std",
+      "raw": 0.0047655007058517145,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.48"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/exit2_accuracy_mean",
+      "raw": 0.7493666609128317,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.94"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/exit2_accuracy_std",
+      "raw": 0.0011590237685180896,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.12"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/final_exit_accuracy_mean",
+      "raw": 0.7467999855677286,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.68"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/3/final_exit_accuracy_std",
+      "raw": 0.0024879610698483896,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.25"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/exit1_accuracy_mean",
+      "raw": 0.6893333395322164,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "68.93"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/exit1_accuracy_std",
+      "raw": 0.004461311339504587,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.45"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/exit2_accuracy_mean",
+      "raw": 0.7434999942779541,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.35"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/exit2_accuracy_std",
+      "raw": 0.001900017261505127,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/final_exit_accuracy_mean",
+      "raw": 0.7455666661262512,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.56"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/24/final_exit_accuracy_std",
+      "raw": 0.001159043482084122,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.12"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/exit1_accuracy_mean",
+      "raw": 0.6439666549364725,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "64.40"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/exit1_accuracy_std",
+      "raw": 0.00128970191710364,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.13"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/exit2_accuracy_mean",
+      "raw": 0.7518666585286459,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/exit2_accuracy_std",
+      "raw": 0.0011150536453427855,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.11"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/final_exit_accuracy_mean",
+      "raw": 0.7630999883015951,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "76.31"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/45/final_exit_accuracy_std",
+      "raw": 0.0022605421500440197,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.23"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/exit1_accuracy_mean",
+      "raw": 0.6958666642506918,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "69.59"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/exit1_accuracy_std",
+      "raw": 0.0024846006395148165,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.25"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/exit2_accuracy_mean",
+      "raw": 0.7555666565895081,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.56"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/exit2_accuracy_std",
+      "raw": 0.0009504467450344913,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.10"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/final_exit_accuracy_mean",
+      "raw": 0.7580666740735372,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.81"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/66/final_exit_accuracy_std",
+      "raw": 0.001656307245403972,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.17"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/accuracy_mean",
+      "raw": 0.7718999981880188,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "77.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/accuracy_std",
+      "raw": 0.0004582750819893117,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.05"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/cost_ratio_mean",
+      "raw": 1.0,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "100.00"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/0/cost_ratio_std",
+      "raw": 0.0,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.00"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/5/budget",
+      "raw": 0.65,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "65"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/5/accuracy_mean",
+      "raw": 0.7472666700681051,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.73"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/5/accuracy_std",
+      "raw": 0.002615992166032519,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.26"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/5/cost_ratio_mean",
+      "raw": 0.6493852492088364,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "64.94"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/5/cost_ratio_std",
+      "raw": 0.0012502100974313987,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.13"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/26/budget",
+      "raw": 0.65,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "65"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/26/accuracy_mean",
+      "raw": 0.7412333289782206,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.12"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/26/accuracy_std",
+      "raw": 0.0024501894412253754,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.25"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/26/cost_ratio_mean",
+      "raw": 0.6499548119565551,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "65.00"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/26/cost_ratio_std",
+      "raw": 0.0013689137683142968,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.14"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/47/budget",
+      "raw": 0.65,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "65"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/47/accuracy_mean",
+      "raw": 0.7422666748364767,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.23"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/47/accuracy_std",
+      "raw": 0.0024946695454392577,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.25"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/47/cost_ratio_mean",
+      "raw": 0.6483386356346207,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "64.83"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/47/cost_ratio_std",
+      "raw": 0.00882450291707639,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.88"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/68/budget",
+      "raw": 0.65,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "65"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/68/accuracy_mean",
+      "raw": 0.7531999945640564,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.32"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/68/accuracy_std",
+      "raw": 0.0018520355445211013,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/68/cost_ratio_mean",
+      "raw": 0.643607624788767,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "64.36"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/68/cost_ratio_std",
+      "raw": 0.006947340491049745,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.69"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/77/budget",
+      "raw": 0.65,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "65"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/77/accuracy_mean",
+      "raw": 0.7485000093777975,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/77/accuracy_std",
+      "raw": 0.002893090120600615,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.29"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/77/cost_ratio_mean",
+      "raw": 0.6491147122008173,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "64.91"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/77/cost_ratio_std",
+      "raw": 0.006686657841764616,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.67"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/6/budget",
+      "raw": 0.75,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "75"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/6/accuracy_mean",
+      "raw": 0.7473000089327494,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.73"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/6/accuracy_std",
+      "raw": 0.0012288328853996468,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.12"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/6/cost_ratio_mean",
+      "raw": 0.7057984251697546,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "70.58"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/6/cost_ratio_std",
+      "raw": 0.029905385565948926,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "2.99"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/27/budget",
+      "raw": 0.75,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "75"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/27/accuracy_mean",
+      "raw": 0.743066648642222,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.31"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/27/accuracy_std",
+      "raw": 0.0018475177229632996,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.18"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/27/cost_ratio_mean",
+      "raw": 0.7119342889590439,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "71.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/27/cost_ratio_std",
+      "raw": 0.024829262714529572,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "2.48"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/48/budget",
+      "raw": 0.75,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "75"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/48/accuracy_mean",
+      "raw": 0.7596333225568136,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.96"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/48/accuracy_std",
+      "raw": 0.0023965100770108046,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.24"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/48/cost_ratio_mean",
+      "raw": 0.7452783812332934,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.53"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/48/cost_ratio_std",
+      "raw": 0.002175651400451215,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.22"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/69/budget",
+      "raw": 0.75,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "75"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/69/accuracy_mean",
+      "raw": 0.7568333347638448,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.68"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/69/accuracy_std",
+      "raw": 0.0019087531176415174,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/69/cost_ratio_mean",
+      "raw": 0.7135669470611731,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "71.36"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/69/cost_ratio_std",
+      "raw": 0.036325862446071534,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "3.63"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/78/budget",
+      "raw": 0.75,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "75"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/78/accuracy_mean",
+      "raw": 0.7576333483060201,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.76"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/78/accuracy_std",
+      "raw": 0.0006658403529682285,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.07"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/78/cost_ratio_mean",
+      "raw": 0.7314446406734876,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "73.14"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/78/cost_ratio_std",
+      "raw": 0.00972366840024689,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.97"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/7/budget",
+      "raw": 0.85,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/7/accuracy_mean",
+      "raw": 0.7473000089327494,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.73"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/7/accuracy_std",
+      "raw": 0.0012288328853996468,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.12"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/7/cost_ratio_mean",
+      "raw": 0.7057984251697546,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "70.58"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/7/cost_ratio_std",
+      "raw": 0.029905385565948926,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "2.99"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/28/budget",
+      "raw": 0.85,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/28/accuracy_mean",
+      "raw": 0.743066648642222,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.31"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/28/accuracy_std",
+      "raw": 0.0018475177229632996,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.18"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/28/cost_ratio_mean",
+      "raw": 0.7119342889590439,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "71.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/28/cost_ratio_std",
+      "raw": 0.024829262714529572,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "2.48"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/49/budget",
+      "raw": 0.85,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/49/accuracy_mean",
+      "raw": 0.7627666791280111,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "76.28"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/49/accuracy_std",
+      "raw": 0.0023437918778955267,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.23"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/49/cost_ratio_mean",
+      "raw": 0.8359711615817126,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "83.60"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/49/cost_ratio_std",
+      "raw": 0.016809344975823624,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "1.68"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/70/budget",
+      "raw": 0.85,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/70/accuracy_mean",
+      "raw": 0.7568666736284891,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.69"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/70/accuracy_std",
+      "raw": 0.0018903246159269736,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.19"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/70/cost_ratio_mean",
+      "raw": 0.72047059163671,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "72.05"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/70/cost_ratio_std",
+      "raw": 0.04732772358433386,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "4.73"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/79/budget",
+      "raw": 0.85,
+      "scale": 100,
+      "decimal_places": 0,
+      "formatted": "85"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/79/accuracy_mean",
+      "raw": 0.7576333483060201,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "75.76"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/79/accuracy_std",
+      "raw": 0.0006658403529682285,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "0.07"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/79/cost_ratio_mean",
+      "raw": 0.7429587780747842,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "74.30"
+    },
+    {
+      "source": "results\\final\\summary.json",
+      "pointer": "/groups/79/cost_ratio_std",
+      "raw": 0.0284963954358844,
+      "scale": 100,
+      "decimal_places": 2,
+      "formatted": "2.85"
     }
   ],
   "output_sha256": {
-    "paper\\generated\\architecture_table.md": "e69e4fb85328403aa32a62ca90e4cace502ad48fdf4993d4613baa6b2ab1c66d"
+    "paper\\generated\\architecture_table.md": "e69e4fb85328403aa32a62ca90e4cace502ad48fdf4993d4613baa6b2ab1c66d",
+    "paper\\generated\\exit_accuracy_table.md": "759f8fa639d1706d2c0c8079c151e85c0c394b8e4a5dcd23006bc01f9bdf7919",
+    "paper\\generated\\budget_accuracy_table.md": "caadcfdd33b541b627f341b7e5de62caefbc82b003eeec636583772dd3f317af"
   },
   "notes": "Architecture counts are not measured latency. Test mean cost is reported, not assumed equal to validation target."
 }
