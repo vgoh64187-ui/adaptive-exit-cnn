@@ -1,0 +1,171 @@
+{
+  "scope": "validation selection examples; not aggregate accuracy or official test",
+  "selection_rule": "Smallest original index within every nonempty (exit, correctness) stratum",
+  "strata": [
+    {
+      "exit": 1,
+      "correct": true,
+      "count": 820
+    },
+    {
+      "exit": 1,
+      "correct": false,
+      "count": 55
+    },
+    {
+      "exit": 2,
+      "correct": true,
+      "count": 767
+    },
+    {
+      "exit": 2,
+      "correct": false,
+      "count": 162
+    },
+    {
+      "exit": 3,
+      "correct": true,
+      "count": 301
+    },
+    {
+      "exit": 3,
+      "correct": false,
+      "count": 395
+    }
+  ],
+  "rows": [
+    {
+      "index": 25,
+      "truth": "table",
+      "prediction": "table",
+      "correct": true,
+      "exit": 1,
+      "probability": 0.978428304195404,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287388160,
+      "cost_ratio": 0.517379481979906
+    },
+    {
+      "index": 687,
+      "truth": "pine_tree",
+      "prediction": "palm_tree",
+      "correct": false,
+      "exit": 1,
+      "probability": 0.9979654550552368,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287388160,
+      "cost_ratio": 0.517379481979906
+    },
+    {
+      "index": 66,
+      "truth": "sweet_pepper",
+      "prediction": "sweet_pepper",
+      "correct": true,
+      "exit": 2,
+      "probability": 0.9873749017715454,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421942784,
+      "cost_ratio": 0.7596156327772144
+    },
+    {
+      "index": 559,
+      "truth": "boy",
+      "prediction": "lawn_mower",
+      "correct": false,
+      "exit": 2,
+      "probability": 0.6962897777557373,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421942784,
+      "cost_ratio": 0.7596156327772144
+    },
+    {
+      "index": 305,
+      "truth": "snake",
+      "prediction": "snake",
+      "correct": true,
+      "exit": 3,
+      "probability": 0.656941294670105,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 556211712,
+      "cost_ratio": 1.0013374504562633
+    },
+    {
+      "index": 536,
+      "truth": "shrew",
+      "prediction": "lobster",
+      "correct": false,
+      "exit": 3,
+      "probability": 0.33079227805137634,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 556211712,
+      "cost_ratio": 1.0013374504562633
+    }
+  ],
+  "weights_sha256": "48c2a19298b26aa6fcf5402b48587acfbf7ea58fc9e392892dc6d6178e5dcb67",
+  "policy_sha256": "44a9d7d821501b7f41d648eebdd22083e552777cad06a5f6a1f836401d54d26c",
+  "prediction_sha256": "8dd3207665395067ae464e5238bf6163130f9375ef23aa01df21e08442047860",
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "selected_policy": {
+    "policy": {
+      "thresholds": [
+        0.8398719429969788,
+        0.6468538045883179
+      ],
+      "temperatures": [
+        1.5527763366699219,
+        1.4475758075714111,
+        1.22684907913208
+      ],
+      "consensus": false,
+      "margin": 0.0
+    },
+    "selection": {
+      "accuracy": 0.7552000284194946,
+      "mean_macs": 412229135.1552,
+      "cost_ratio": 0.7421283340400037,
+      "exit_counts": [
+        875,
+        929,
+        696
+      ],
+      "n": 2500,
+      "early_exit_error_rate": 0.12028824537992477,
+      "harmful_early_exit_fraction": 0.006800000090152025,
+      "beneficial_early_exit_fraction": 0.004399999976158142
+    },
+    "criterion": "budget",
+    "budget": 0.75
+  },
+  "execution_device": "cpu",
+  "timing_measured": false
+}
