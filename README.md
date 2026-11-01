@@ -98,6 +98,7 @@ benchmark 同时记录阶段访问次数和缓存路由的一致性；精度验�
 # 所有 run 的最终测试齐全后汇总：
 .venv/Scripts/python.exe summarise.py configs/main_queue.json
 .venv/Scripts/python.exe paired_effects.py configs/main_queue.json
+.venv/Scripts/python.exe plot_ablation.py --budget .75
 .venv/Scripts/python.exe make_figures.py results
 .venv/Scripts/python.exe make_figures.py routing --consensus
 
