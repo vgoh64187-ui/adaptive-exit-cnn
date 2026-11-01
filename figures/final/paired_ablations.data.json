@@ -1,0 +1,339 @@
+{
+  "scope": "Test accuracy and actual cost; target budget selected on validation",
+  "sign": "comparison minus reference",
+  "records": [
+    {
+      "contrast": "local_features_vs_gap",
+      "reference": [
+        "gap",
+        0.0,
+        false
+      ],
+      "comparison": [
+        "local_global",
+        0.0,
+        false
+      ],
+      "target_validation_budget": 0.75,
+      "pairs": [
+        {
+          "seed": 17,
+          "reference_run": "gap_seed17",
+          "comparison_run": "lg_seed17",
+          "reference_accuracy": 0.7468000054359436,
+          "comparison_accuracy": 0.7581999897956848,
+          "reference_actual_cost_ratio": 0.7344786688174025,
+          "comparison_actual_cost_ratio": 0.74688937948198,
+          "accuracy_delta_pp": 1.139998435974121,
+          "cost_ratio_delta_pp": 1.241071066457744,
+          "harmful_early_exit_fraction_delta_pp": 0.7199999876320362,
+          "beneficial_early_exit_fraction_delta_pp": -0.05000000819563866
+        },
+        {
+          "seed": 42,
+          "reference_run": "gap_seed42",
+          "comparison_run": "lg_seed42",
+          "reference_accuracy": 0.746399998664856,
+          "comparison_accuracy": 0.7583000063896179,
+          "reference_actual_cost_ratio": 0.6748025294497189,
+          "comparison_actual_cost_ratio": 0.7461423049128952,
+          "accuracy_delta_pp": 1.1900007724761963,
+          "cost_ratio_delta_pp": 7.133977546317638,
+          "harmful_early_exit_fraction_delta_pp": -0.29000001959502697,
+          "beneficial_early_exit_fraction_delta_pp": -0.5299999844282866
+        },
+        {
+          "seed": 73,
+          "reference_run": "gap_seed73",
+          "comparison_run": "lg_seed73",
+          "reference_accuracy": 0.7487000226974487,
+          "comparison_accuracy": 0.7623999714851379,
+          "reference_actual_cost_ratio": 0.7081140772421421,
+          "comparison_actual_cost_ratio": 0.742803459305005,
+          "accuracy_delta_pp": 1.369994878768921,
+          "cost_ratio_delta_pp": 3.4689382062862872,
+          "harmful_early_exit_fraction_delta_pp": 0.5000000121071935,
+          "beneficial_early_exit_fraction_delta_pp": 0.31999999191612005
+        }
+      ],
+      "summary": {
+        "accuracy_delta_pp_mean": 1.2333313624064128,
+        "accuracy_delta_pp_std": 0.12096588751520339,
+        "cost_ratio_delta_pp_mean": 3.94799560635389,
+        "cost_ratio_delta_pp_std": 2.975518222009963,
+        "harmful_early_exit_fraction_delta_pp_mean": 0.3099999933814009,
+        "harmful_early_exit_fraction_delta_pp_std": 0.5311308774553763,
+        "beneficial_early_exit_fraction_delta_pp_mean": -0.08666666690260172,
+        "beneficial_early_exit_fraction_delta_pp_std": 0.42618461122138446
+      }
+    },
+    {
+      "contrast": "fusion_vs_matched_capacity",
+      "reference": [
+        "mlp",
+        0.0,
+        false
+      ],
+      "comparison": [
+        "local_global",
+        0.0,
+        false
+      ],
+      "target_validation_budget": 0.75,
+      "pairs": [
+        {
+          "seed": 17,
+          "reference_run": "mlp_seed17",
+          "comparison_run": "lg_seed17",
+          "reference_accuracy": 0.7419999837875366,
+          "comparison_accuracy": 0.7581999897956848,
+          "reference_actual_cost_ratio": 0.7342600098396166,
+          "comparison_actual_cost_ratio": 0.74688937948198,
+          "accuracy_delta_pp": 1.6200006008148193,
+          "cost_ratio_delta_pp": 1.2629369642363386,
+          "harmful_early_exit_fraction_delta_pp": 0.19000000320374966,
+          "beneficial_early_exit_fraction_delta_pp": -0.0800000037997961
+        },
+        {
+          "seed": 42,
+          "reference_run": "mlp_seed42",
+          "comparison_run": "lg_seed42",
+          "reference_accuracy": 0.745199978351593,
+          "comparison_accuracy": 0.7583000063896179,
+          "reference_actual_cost_ratio": 0.6851937545165453,
+          "comparison_actual_cost_ratio": 0.7461423049128952,
+          "accuracy_delta_pp": 1.3100028038024902,
+          "cost_ratio_delta_pp": 6.094855039634995,
+          "harmful_early_exit_fraction_delta_pp": -0.6200000178068876,
+          "beneficial_early_exit_fraction_delta_pp": -0.6800000090152025
+        },
+        {
+          "seed": 73,
+          "reference_run": "mlp_seed73",
+          "comparison_run": "lg_seed73",
+          "reference_accuracy": 0.7419999837875366,
+          "comparison_accuracy": 0.7623999714851379,
+          "reference_actual_cost_ratio": 0.7163491025209696,
+          "comparison_actual_cost_ratio": 0.742803459305005,
+          "accuracy_delta_pp": 2.039998769760132,
+          "cost_ratio_delta_pp": 2.6454356784035404,
+          "harmful_early_exit_fraction_delta_pp": 0.139999995008111,
+          "beneficial_early_exit_fraction_delta_pp": 0.1799999736249447
+        }
+      ],
+      "summary": {
+        "accuracy_delta_pp_mean": 1.6566673914591472,
+        "accuracy_delta_pp_std": 0.36637667465427404,
+        "cost_ratio_delta_pp_mean": 3.334409227424958,
+        "cost_ratio_delta_pp_std": 2.488548067705231,
+        "harmful_early_exit_fraction_delta_pp_mean": -0.09666667319834232,
+        "harmful_early_exit_fraction_delta_pp_std": 0.45390895826064703,
+        "beneficial_early_exit_fraction_delta_pp_mean": -0.19333334639668465,
+        "beneficial_early_exit_fraction_delta_pp_std": 0.44105932417691973
+      }
+    },
+    {
+      "contrast": "distillation",
+      "reference": [
+        "local_global",
+        0.0,
+        false
+      ],
+      "comparison": [
+        "local_global",
+        0.5,
+        false
+      ],
+      "target_validation_budget": 0.75,
+      "pairs": [
+        {
+          "seed": 17,
+          "reference_run": "lg_seed17",
+          "comparison_run": "lg_kd_seed17",
+          "reference_accuracy": 0.7581999897956848,
+          "comparison_accuracy": 0.7554000020027161,
+          "reference_actual_cost_ratio": 0.74688937948198,
+          "comparison_actual_cost_ratio": 0.6785836784957139,
+          "accuracy_delta_pp": -0.279998779296875,
+          "cost_ratio_delta_pp": -6.830570098626609,
+          "harmful_early_exit_fraction_delta_pp": 0.5900000222027302,
+          "beneficial_early_exit_fraction_delta_pp": 0.8899999782443047
+        },
+        {
+          "seed": 42,
+          "reference_run": "lg_seed42",
+          "comparison_run": "lg_kd_seed42",
+          "reference_accuracy": 0.7583000063896179,
+          "comparison_accuracy": 0.7590000033378601,
+          "reference_actual_cost_ratio": 0.7461423049128952,
+          "comparison_actual_cost_ratio": 0.7110162143976404,
+          "accuracy_delta_pp": 0.06999969482421875,
+          "cost_ratio_delta_pp": -3.5126090515254837,
+          "harmful_early_exit_fraction_delta_pp": -0.279999990016222,
+          "beneficial_early_exit_fraction_delta_pp": -0.13000001199543476
+        },
+        {
+          "seed": 73,
+          "reference_run": "lg_seed73",
+          "comparison_run": "lg_kd_seed73",
+          "reference_accuracy": 0.7623999714851379,
+          "comparison_accuracy": 0.7560999989509583,
+          "reference_actual_cost_ratio": 0.742803459305005,
+          "comparison_actual_cost_ratio": 0.7511009482901649,
+          "accuracy_delta_pp": -0.6299972534179688,
+          "cost_ratio_delta_pp": 0.8297488985159918,
+          "harmful_early_exit_fraction_delta_pp": -0.610000011511147,
+          "beneficial_early_exit_fraction_delta_pp": -0.38999998942017555
+        }
+      ],
+      "summary": {
+        "accuracy_delta_pp_mean": -0.279998779296875,
+        "accuracy_delta_pp_std": 0.34999847412109375,
+        "cost_ratio_delta_pp_mean": -3.1711434172120336,
+        "cost_ratio_delta_pp_std": 3.84155839068714,
+        "harmful_early_exit_fraction_delta_pp_mean": -0.09999999310821295,
+        "harmful_early_exit_fraction_delta_pp_std": 0.6199193652350998,
+        "beneficial_early_exit_fraction_delta_pp_mean": 0.12333332560956478,
+        "beneficial_early_exit_fraction_delta_pp_std": 0.6765599118051808
+      }
+    },
+    {
+      "contrast": "consensus_without_distillation",
+      "reference": [
+        "local_global",
+        0.0,
+        false
+      ],
+      "comparison": [
+        "local_global",
+        0.0,
+        true
+      ],
+      "target_validation_budget": 0.75,
+      "pairs": [
+        {
+          "seed": 17,
+          "reference_run": "lg_seed17",
+          "comparison_run": "lg_seed17",
+          "reference_accuracy": 0.7581999897956848,
+          "comparison_accuracy": 0.757099986076355,
+          "reference_actual_cost_ratio": 0.74688937948198,
+          "comparison_actual_cost_ratio": 0.7461883862107107,
+          "accuracy_delta_pp": -0.1100003719329834,
+          "cost_ratio_delta_pp": -0.07009932712692679,
+          "harmful_early_exit_fraction_delta_pp": 0.6099999882280827,
+          "beneficial_early_exit_fraction_delta_pp": 0.4999999888241291
+        },
+        {
+          "seed": 42,
+          "reference_run": "lg_seed42",
+          "comparison_run": "lg_seed42",
+          "reference_accuracy": 0.7583000063896179,
+          "comparison_accuracy": 0.7580000162124634,
+          "reference_actual_cost_ratio": 0.7461423049128952,
+          "comparison_actual_cost_ratio": 0.7542883301686791,
+          "accuracy_delta_pp": -0.0299990177154541,
+          "cost_ratio_delta_pp": 0.8146025255783895,
+          "harmful_early_exit_fraction_delta_pp": 0.3599999938160181,
+          "beneficial_early_exit_fraction_delta_pp": 0.3299999516457319
+        },
+        {
+          "seed": 73,
+          "reference_run": "lg_seed73",
+          "comparison_run": "lg_seed73",
+          "reference_accuracy": 0.7623999714851379,
+          "comparison_accuracy": 0.760699987411499,
+          "reference_actual_cost_ratio": 0.742803459305005,
+          "comparison_actual_cost_ratio": 0.7473020553046363,
+          "accuracy_delta_pp": -0.1699984073638916,
+          "cost_ratio_delta_pp": 0.44985959996313163,
+          "harmful_early_exit_fraction_delta_pp": 0.4999999888241291,
+          "beneficial_early_exit_fraction_delta_pp": 0.32999999821186066
+        }
+      ],
+      "summary": {
+        "accuracy_delta_pp_mean": -0.1033325990041097,
+        "accuracy_delta_pp_std": 0.07023746630080717,
+        "cost_ratio_delta_pp_mean": 0.39812093280486477,
+        "cost_ratio_delta_pp_std": 0.44461445017513795,
+        "harmful_early_exit_fraction_delta_pp_mean": 0.48999999028940994,
+        "harmful_early_exit_fraction_delta_pp_std": 0.12529963798642382,
+        "beneficial_early_exit_fraction_delta_pp_mean": 0.38666664622724056,
+        "beneficial_early_exit_fraction_delta_pp_std": 0.09814955378471328
+      }
+    },
+    {
+      "contrast": "consensus_with_distillation",
+      "reference": [
+        "local_global",
+        0.5,
+        false
+      ],
+      "comparison": [
+        "local_global",
+        0.5,
+        true
+      ],
+      "target_validation_budget": 0.75,
+      "pairs": [
+        {
+          "seed": 17,
+          "reference_run": "lg_kd_seed17",
+          "comparison_run": "lg_kd_seed17",
+          "reference_accuracy": 0.7554000020027161,
+          "comparison_accuracy": 0.7572000026702881,
+          "reference_actual_cost_ratio": 0.6785836784957139,
+          "comparison_actual_cost_ratio": 0.7323184385657664,
+          "accuracy_delta_pp": 0.18000006675720215,
+          "cost_ratio_delta_pp": 5.373476007005252,
+          "harmful_early_exit_fraction_delta_pp": -0.9800000116229057,
+          "beneficial_early_exit_fraction_delta_pp": -0.7999999448657036
+        },
+        {
+          "seed": 42,
+          "reference_run": "lg_kd_seed42",
+          "comparison_run": "lg_kd_seed42",
+          "reference_accuracy": 0.7590000033378601,
+          "comparison_accuracy": 0.758400022983551,
+          "reference_actual_cost_ratio": 0.7110162143976404,
+          "comparison_actual_cost_ratio": 0.7213135638307678,
+          "accuracy_delta_pp": -0.0599980354309082,
+          "cost_ratio_delta_pp": 1.0297349433127434,
+          "harmful_early_exit_fraction_delta_pp": 0.29000001959502697,
+          "beneficial_early_exit_fraction_delta_pp": 0.22999998182058334
+        },
+        {
+          "seed": 73,
+          "reference_run": "lg_kd_seed73",
+          "comparison_run": "lg_kd_seed73",
+          "reference_accuracy": 0.7560999989509583,
+          "comparison_accuracy": 0.7573000192642212,
+          "reference_actual_cost_ratio": 0.7511009482901649,
+          "comparison_actual_cost_ratio": 0.7407019196239285,
+          "accuracy_delta_pp": 0.12000203132629395,
+          "cost_ratio_delta_pp": -1.0399028666236432,
+          "harmful_early_exit_fraction_delta_pp": 0.36000001709908247,
+          "beneficial_early_exit_fraction_delta_pp": 0.4800000227987766
+        }
+      ],
+      "summary": {
+        "accuracy_delta_pp_mean": 0.0800013542175293,
+        "accuracy_delta_pp_std": 0.12489921092762517,
+        "cost_ratio_delta_pp_mean": 1.7877693612314507,
+        "cost_ratio_delta_pp_std": 3.273197103481453,
+        "harmful_early_exit_fraction_delta_pp_mean": -0.1099999916429321,
+        "harmful_early_exit_fraction_delta_pp_std": 0.7542546161519383,
+        "beneficial_early_exit_fraction_delta_pp_mean": -0.029999980082114536,
+        "beneficial_early_exit_fraction_delta_pp_std": 0.6784540989980979
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "results\\final\\paired_effects.json",
+      "sha256": "3266ff9a42ae16347defe55de77e593d539e87214bc207d2fe65a3fafba72d4f"
+    }
+  ],
+  "uncertainty": "Three independent seeds; sample standard deviation, not significance testing",
+  "development": false
+}

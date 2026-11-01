@@ -19,7 +19,7 @@ LABELS={'local_features_vs_gap':'融合头 − GAP 头',
 def read_audited(path,manifest):
     payload=json.loads(Path(path).read_text());rows,provenance=collect(manifest)
     if (payload['manifest_sha256']!=file_sha256(manifest) or payload['provenance']!=provenance
-        or payload['comparisons']!=compare(rows)):
+        or payload['comparisons']!=json.loads(json.dumps(compare(rows)))):
         raise RuntimeError('Paired comparisons differ from current audited test data')
     return payload
 
