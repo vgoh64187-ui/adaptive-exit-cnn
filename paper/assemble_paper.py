@@ -28,12 +28,12 @@ exit_table=read('generated/exit_accuracy_table.md').replace('表 2 ', '表 4 ', 
 budget_table=read('generated/budget_accuracy_table.md')
 analysis=analysis.replace('表 2、表 3', '表 3、表 4').replace('表 2 显示', '表 4 显示')
 analysis=analysis.replace('## 4.1 按预算分配计算', budget_table+'\n\n## 4.1 按预算分配计算').replace('## 4.2 出口特征与蒸馏', exit_table+'\n\n## 4.2 出口特征与蒸馏')
-fig2='![图 2 测试集准确率与实际计算比。横轴为测试样本的实际平均成本；点为三个独立种子的均值，误差线为样本标准差。](../figures/final/budget_accuracy.png)'
-fig3='![图 3 不同出口结构的分类准确率对照。](../figures/final/exit_ablations.png)'
-fig4='![图 4 相同种子配对的准确率与实际计算比差值，横线表示样本标准差。](../figures/final/paired_ablations.png)'
-fig5='![图 5 融合蒸馏模型的退出分布与计算分配。](../figures/final/routing_local_global_kd_confidence.png)'
-fig6='![图 6 固定验证样本上的实际延迟和吞吐。CPU 基线存在明显波动，见正文复测说明。](../figures/final/deployment_tradeoffs.png)'
-fig7='![图 7 验证样本的动态执行实例。按出口和分类正误分层选取每层原始索引最小的样本，蓝色为实际执行阶段。](../figures/application/lg_kd_seed42_dynamic_examples.png)'
+fig2='![图 2 测试集准确率与实际计算比。横轴为测试样本的实际平均成本；点为三个独立种子的均值，误差线为样本标准差。](../figures/print/budget_accuracy.png)'
+fig3='![图 3 不同出口结构的分类准确率对照。](../figures/print/exit_ablations.png)'
+fig4='![图 4 相同种子配对的准确率与实际计算比差值，横线表示样本标准差。](../figures/print/paired_ablations.png)'
+fig5='![图 5 融合蒸馏模型的退出分布与计算分配。](../figures/print/routing_local_global_kd_confidence.png)'
+fig6='![图 6 固定验证样本上的实际延迟和吞吐。CPU 基线存在明显波动，见正文复测说明。](../figures/print/deployment_tradeoffs.png)'
+fig7='![图 7 验证样本的动态执行实例。按出口和分类正误分层选取每层原始索引最小的样本，蓝色为实际执行阶段。](../figures/print/lg_kd_seed42_dynamic_examples.png)'
 analysis=analysis.replace(exit_table, fig2+'\n\n'+exit_table)
 analysis=analysis.replace('## 4.3 退出策略与实际执行', fig3+'\n\n'+fig4+'\n\n## 4.3 退出策略与实际执行')
 analysis=analysis.replace('图中部署计时采用', fig5+'\n\n图中部署计时采用')
@@ -43,7 +43,7 @@ conclusion=('## 5 结论\n\n本文构建了基于残差网络的多出口图像�
             '实际计时表明，动态路由的收益取决于设备与执行方式，MACs 不能直接替代延迟。后续可在隔离负载下开展交错重复计时，'
             '并在其他图像分布和边缘硬件上验证策略的适配性。\n')
 application=('## 4.4 预算约束下的分类应用示例\n\n'
-             '图 7 展示种子 42 融合加蒸馏模型在 75% 目标预算下处理验证图像的路径。'
+             '图 7 展示种子 42 融合加蒸馏模型在 75% 目标预算下采用置信度策略处理验证图像的路径。'
              '样本按出口位置和预测正误分层，每个非空层选取原始索引最小的图像；这组示例用于说明路径，不用于估计整体准确率。'
              '程序以真实动态前向记录各残差阶段访问次数，并逐例核对缓存预测。'
              '第一、第二和最终出口的累计成本分别为 287.388 M、421.943 M 和 556.212 M MACs；最终出口包含前两个辅助头的开销。\n')

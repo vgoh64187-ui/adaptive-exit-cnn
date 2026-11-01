@@ -1,0 +1,172 @@
+{
+  "scope": "validation selection examples; not aggregate accuracy or official test",
+  "selection_rule": "Smallest original index within every nonempty (exit, correctness) stratum",
+  "strata": [
+    {
+      "exit": 1,
+      "correct": true,
+      "count": 951
+    },
+    {
+      "exit": 1,
+      "correct": false,
+      "count": 49
+    },
+    {
+      "exit": 2,
+      "correct": true,
+      "count": 764
+    },
+    {
+      "exit": 2,
+      "correct": false,
+      "count": 254
+    },
+    {
+      "exit": 3,
+      "correct": true,
+      "count": 181
+    },
+    {
+      "exit": 3,
+      "correct": false,
+      "count": 301
+    }
+  ],
+  "rows": [
+    {
+      "index": 25,
+      "truth": "table",
+      "prediction": "table",
+      "correct": true,
+      "exit": 1,
+      "probability": 0.9992801547050476,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287388160,
+      "cost_ratio": 0.517379481979906
+    },
+    {
+      "index": 687,
+      "truth": "pine_tree",
+      "prediction": "palm_tree",
+      "correct": false,
+      "exit": 1,
+      "probability": 0.9637047052383423,
+      "stage_visits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "cumulative_macs": 287388160,
+      "cost_ratio": 0.517379481979906
+    },
+    {
+      "index": 82,
+      "truth": "skunk",
+      "prediction": "skunk",
+      "correct": true,
+      "exit": 2,
+      "probability": 0.9830854535102844,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421942784,
+      "cost_ratio": 0.7596156327772144
+    },
+    {
+      "index": 108,
+      "truth": "palm_tree",
+      "prediction": "sweet_pepper",
+      "correct": false,
+      "exit": 2,
+      "probability": 0.6760039925575256,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "cumulative_macs": 421942784,
+      "cost_ratio": 0.7596156327772144
+    },
+    {
+      "index": 205,
+      "truth": "porcupine",
+      "prediction": "porcupine",
+      "correct": true,
+      "exit": 3,
+      "probability": 0.7709832191467285,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 556211712,
+      "cost_ratio": 1.0013374504562633
+    },
+    {
+      "index": 650,
+      "truth": "tulip",
+      "prediction": "forest",
+      "correct": false,
+      "exit": 3,
+      "probability": 0.19939127564430237,
+      "stage_visits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cumulative_macs": 556211712,
+      "cost_ratio": 1.0013374504562633
+    }
+  ],
+  "weights_sha256": "a3d863e702c111f19ce083af72ae902ad4e6e8ec696d2b268ce5e9a864cba890",
+  "policy_sha256": "5f880a259242e320a80547ba5c6f49975476f6378b1e2071351b4160b2697148",
+  "prediction_sha256": "9a233dd49239b82e06b1387d17ea87d6f80997b871d2fc9f8a68016eda30dde5",
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "selected_policy": {
+    "policy": {
+      "thresholds": [
+        0.908528208732605,
+        0.54770827293396
+      ],
+      "temperatures": [
+        0.9769429564476013,
+        1.128678798675537,
+        1.3192756175994873
+      ],
+      "consensus": false,
+      "margin": 0.0
+    },
+    "selection": {
+      "accuracy": 0.758400022983551,
+      "mean_macs": 394007983.7184,
+      "cost_ratio": 0.7093251389068117,
+      "exit_counts": [
+        1000,
+        1018,
+        482
+      ],
+      "n": 2500,
+      "early_exit_error_rate": 0.1501486599445343,
+      "harmful_early_exit_fraction": 0.0031999999191612005,
+      "beneficial_early_exit_fraction": 0.003599999938160181
+    },
+    "criterion": "budget",
+    "budget": 0.75
+  },
+  "execution_device": "cpu",
+  "timing_measured": false,
+  "print_layout": "All text enlarged by 35%; plotted data unchanged."
+}
