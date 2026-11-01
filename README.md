@@ -2,7 +2,7 @@
 
 面向计算预算的局部—全局协同提前退出 CNN 课程研究项目。
 
-五类模型、三个随机种子的 15 组训练和冻结测试已完成；测试汇总见 `results/final/summary.json`，实验结果与计算预算详见 `paper/generated/`。论文仍在排版与核验阶段。完整计划见 PROJECT_PLAN.md。
+五类模型、三个随机种子的 15 组训练和冻结测试已完成；测试汇总见 `results/final/summary.json`，实验结果与计算预算详见 `paper/generated/`。论文源文件、数值核验与排版脚本位于 `paper/`；完整计划见 PROJECT_PLAN.md。
 经典骨干采用 CIFAR 版 ResNet-18；现有教材未明确课程实验三任务，相关差异仍待课程材料核对。
 
 ## 结果真实性
@@ -113,7 +113,7 @@ benchmark 同时记录阶段访问次数和缓存路由的一致性；精度验�
 .venv/Scripts/python.exe make_figures.py diagnostics --runs runs/lg_kd_seed42
 .venv/Scripts/python.exe make_figures.py data
 # 验证集案例：各出口按正确/错误分组，固定选取最小索引，实际核验跳算
-.venv/Scripts/python.exe make_examples.py runs/lg_kd_seed42 --budget .75 --consensus
+.venv/Scripts/python.exe make_examples.py runs/lg_kd_seed42 --budget .75
 ```
 
 完整训练队列确认 `queue_complete` 后，也可用 `.venv/Scripts/python.exe run_final_tests.py` 按清单自动冻结、逐个测试、逐样本核验和汇总。该命令在队列未完成时拒绝访问测试集；中断后可重跑，已有测试结果必须通过缓存与冻结协议核验才会复用。
@@ -125,6 +125,20 @@ benchmark 同时记录阶段访问次数和缓存路由的一致性；精度验�
 可靠性图的 ECE/NLL/Brier 使用未参与温度拟合的策略选择子集；风险—覆盖率图逐出口展示，不将单出口排序直接等同于多出口实际路由。固定出口对照在共享训练权重下运行，并计入此前已执行的辅助头成本。
 
 交互应用支持固定验证样本与本地图像上传，显示预测概率、实际退出位置、累计 MACs 和阶段跳算路径，并导出带权重标识的 JSON 记录。所有推理在本机执行。`--development` 可用于冒烟权重检查界面，并显示用途标记；正式展示使用完整训练权重。界面的单次延迟不进入部署性能表。
+
+## 论文生成与检查
+
+Windows 下先安装 `requirements.txt` 与 `requirements-report.txt`。以下命令可从仓库中已保存的汇总、表格与图生成论文，不需要重新训练；该过程使用 Windows 字体（宋体、黑体、Times New Roman）。
+
+```powershell
+.venv/Scripts/python.exe -m pip install -r requirements-report.txt
+.venv/Scripts/python.exe paper/assemble_paper.py
+.venv/Scripts/python.exe paper/audit_report.py
+.venv/Scripts/python.exe paper/render_math.py paper/report_draft.md --output tmp/report_math
+.venv/Scripts/python.exe paper/build_pdf.py paper/report_draft.md --math-dir tmp/report_math --output output/pdf/report.pdf
+```
+
+正文数值审计见 `paper/generated/report_audit.json`；表格数值来源见 `paper/generated/table_provenance.json`，图像对应的 `.data.json` 保存原始数值及来源。重新训练或重新生成全部图表需要配套运行文件；已有论文图可直接用于上述排版。模型权重副本和校验方式见 `output/weights/README.md`。
 
 ## 文件组织
 
@@ -140,7 +154,7 @@ benchmark 同时记录阶段访问次数和缓存路由的一致性；精度验�
 - `paired_effects.py`：结构、容量、蒸馏及策略的同种子配对差值，保留测试实际计算差异。
 - `tests/`：真实跳层、混合批次一致性与梯度检查。
 - `docs/`：实验协议、版式记录、相关工作与核验记录。
-- `paper/`：论文源稿，结果生成前不写性能结论。
+- `paper/`：论文源稿、排版与数值核验脚本。
 - `figures/`：可编辑矢量图与预览。
 - `runs/`：本地产生，不直接提交大权重和逐样本缓存。
 
