@@ -35,7 +35,7 @@ def build(source,math_dir,output,draft=False):
     for name,filename in [('CN','simsun.ttc'),('Hei','simhei.ttf'),('Latin','times.ttf'),('LatinItalic','timesi.ttf')]:
         pdfmetrics.registerFont(TTFont(name,str(Path('C:/Windows/Fonts')/filename)))
     styles=dict(body=ParagraphStyle('body',fontName='CN',fontSize=11,leading=17,firstLineIndent=22,
-                                   alignment=TA_JUSTIFY,wordWrap='CJK',spaceAfter=5,autoLeading='max'),
+                                   alignment=TA_JUSTIFY,wordWrap='CJK',spaceAfter=5,autoLeading='max',allowWidows=0,allowOrphans=0),
                 title=ParagraphStyle('title',fontName='Hei',fontSize=18,leading=25,alignment=TA_CENTER,spaceAfter=15),
                 h1=ParagraphStyle('h1',fontName='Hei',fontSize=13,leading=19,spaceBefore=11,spaceAfter=6,keepWithNext=True),
                 h2=ParagraphStyle('h2',fontName='Hei',fontSize=11.5,leading=17,spaceBefore=8,spaceAfter=5,keepWithNext=True),

@@ -1,5 +1,6 @@
 """Assemble the editable report from evidence-linked sections and tables."""
 from pathlib import Path
+import json
 
 root=Path(__file__).resolve().parent
 def read(name): return (root/name).read_text(encoding='utf-8')
@@ -27,6 +28,20 @@ architecture=read('generated/architecture_table.md').replace('表 1 ', '表 2 ',
 exit_table=read('generated/exit_accuracy_table.md').replace('表 2 ', '表 4 ', 1)
 budget_table=read('generated/budget_accuracy_table.md')
 analysis=analysis.replace('表 2、表 3', '表 3、表 4').replace('表 2 显示', '表 4 显示')
+summary=json.loads((root.parent/'results/final/summary.json').read_text(encoding='utf-8'))
+routing65=next(g for g in summary['groups'] if g['head']=='local_global' and g['kd']==.5 and g['criterion']=='budget' and g['budget']==.65 and not g['consensus'])
+paired=json.loads((root.parent/'results/final/paired_effects.json').read_text(encoding='utf-8'))
+fusion75=next(g['summary'] for g in paired['comparisons'] if g['contrast']=='local_features_vs_gap' and g['target_validation_budget']==.75)
+paired_text=(f"在 75% 目标预算下，融合头相对 GAP 头的同种子准确率差为 {fusion75['accuracy_delta_pp_mean']:+.2f} ± {fusion75['accuracy_delta_pp_std']:.2f} 个百分点，"
+             f"实际计算比差为 {fusion75['cost_ratio_delta_pp_mean']:+.2f} ± {fusion75['cost_ratio_delta_pp_std']:.2f} 个百分点（图 4）；"
+             '这一对照同时呈现识别与计算差异，并不将目标预算相同等同于实际成本相同。')
+routing_text=(f"在 65% 目标预算下，三个出口平均接收测试样本的 {100*routing65['exit1_fraction_mean']:.2f}%、"
+              f"{100*routing65['exit2_fraction_mean']:.2f}% 和 {100*routing65['exit3_fraction_mean']:.2f}%。"
+              f"相对同权重最终出口，提前退出使 {100*routing65['harmful_early_exit_fraction_mean']:.2f}% 的全部样本由正确变为错误，"
+              f"同时使 {100*routing65['beneficial_early_exit_fraction_mean']:.2f}% 的全部样本由错误变为正确；"
+              '两者差额对应动态准确率相对最终出口的变化。这些数值为三个种子的均值，分母均为各自全部测试样本。')
+analysis=analysis.replace('## 4.2 出口特征与蒸馏',paired_text+'\n\n## 4.2 出口特征与蒸馏')
+analysis=analysis.replace('相应的退出分布展示于图 5。','相应的退出分布展示于图 5。\n\n'+routing_text)
 analysis=analysis.replace('## 4.1 按预算分配计算', budget_table+'\n\n## 4.1 按预算分配计算').replace('## 4.2 出口特征与蒸馏', exit_table+'\n\n## 4.2 出口特征与蒸馏')
 fig2='![图 2 测试集准确率与实际计算比。横轴为测试样本的实际平均成本；点为三个独立种子的均值，误差线为样本标准差。](../figures/print/budget_accuracy.png)'
 fig3='![图 3 不同出口结构的分类准确率对照。](../figures/print/exit_ablations.png)'

@@ -1,0 +1,170 @@
+{
+  "report_sha256": "b5499a5512f14198dc7a6b0a7178a3e59cdb9da0d44c49b4b35142e78b78b508",
+  "checks": [
+    {
+      "label": "摘要基线",
+      "expected": "77.19% ± 0.05%"
+    },
+    {
+      "label": "摘要预算准确率",
+      "expected": "75.32% ± 0.19%"
+    },
+    {
+      "label": "摘要实际成本",
+      "expected": "64.36% ± 0.69%"
+    },
+    {
+      "label": "local_global/0.5/0.65/accuracy",
+      "expected": "75.32% ± 0.19%"
+    },
+    {
+      "label": "local_global/0.5/0.65/cost_ratio",
+      "expected": "64.36% ± 0.69%"
+    },
+    {
+      "label": "gap/0.0/0.65/accuracy",
+      "expected": "74.73% ± 0.26%"
+    },
+    {
+      "label": "gap/0.0/0.65/cost_ratio",
+      "expected": "64.94% ± 0.13%"
+    },
+    {
+      "label": "local_global/0.0/0.75/accuracy",
+      "expected": "75.96% ± 0.24%"
+    },
+    {
+      "label": "local_global/0.0/0.75/cost_ratio",
+      "expected": "74.53% ± 0.22%"
+    },
+    {
+      "label": "local_global/0.5/0.75/accuracy",
+      "expected": "75.68% ± 0.19%"
+    },
+    {
+      "label": "local_global/0.5/0.75/cost_ratio",
+      "expected": "71.36% ± 3.63%"
+    },
+    {
+      "label": "完整基线",
+      "expected": "77.19% ± 0.05%"
+    },
+    {
+      "label": "gap/0.0/exit2_accuracy",
+      "expected": "74.94% ± 0.12%"
+    },
+    {
+      "label": "gap/0.0/final_exit_accuracy",
+      "expected": "74.68% ± 0.25%"
+    },
+    {
+      "label": "mlp/0.0/exit2_accuracy",
+      "expected": "74.35% ± 0.19%"
+    },
+    {
+      "label": "mlp/0.0/final_exit_accuracy",
+      "expected": "74.56% ± 0.12%"
+    },
+    {
+      "label": "local_global/0.0/exit2_accuracy",
+      "expected": "75.19% ± 0.11%"
+    },
+    {
+      "label": "local_global/0.0/final_exit_accuracy",
+      "expected": "76.31% ± 0.23%"
+    },
+    {
+      "label": "local_global/0.5/exit2_accuracy",
+      "expected": "75.56% ± 0.10%"
+    },
+    {
+      "label": "local_global/0.5/final_exit_accuracy",
+      "expected": "75.81% ± 0.17%"
+    },
+    {
+      "label": "first exit kd=0.0",
+      "expected": "64.40% ± 0.13%"
+    },
+    {
+      "label": "first exit kd=0.5",
+      "expected": "69.59% ± 0.25%"
+    },
+    {
+      "label": "paired accuracy",
+      "expected": "+1.23 ± 0.12"
+    },
+    {
+      "label": "paired cost_ratio",
+      "expected": "+3.95 ± 2.98"
+    },
+    {
+      "label": "routing exit1_fraction",
+      "expected": "51.24%"
+    },
+    {
+      "label": "routing exit2_fraction",
+      "expected": "45.40%"
+    },
+    {
+      "label": "routing exit3_fraction",
+      "expected": "3.36%"
+    },
+    {
+      "label": "routing harmful_early_exit_fraction",
+      "expected": "2.02%"
+    },
+    {
+      "label": "routing beneficial_early_exit_fraction",
+      "expected": "1.54%"
+    },
+    {
+      "label": "consensus=False/accuracy",
+      "expected": "75.32% ± 0.19%"
+    },
+    {
+      "label": "consensus=False/cost_ratio",
+      "expected": "64.36% ± 0.69%"
+    },
+    {
+      "label": "consensus=True/accuracy",
+      "expected": "74.85% ± 0.29%"
+    },
+    {
+      "label": "consensus=True/cost_ratio",
+      "expected": "64.91% ± 0.67%"
+    },
+    {
+      "label": "baseline_confidence75_cuda_b1",
+      "expected": "1.5508 ms"
+    },
+    {
+      "label": "lg_kd_confidence75_cuda_b1",
+      "expected": "3.0704 ms"
+    },
+    {
+      "label": "baseline_confidence75_cpu_b1",
+      "expected": "34.2653 ms"
+    },
+    {
+      "label": "CPU repeat",
+      "expected": "5.5764 ms"
+    },
+    {
+      "label": "GPU actual cost",
+      "expected": "71.88%"
+    },
+    {
+      "label": "application exit MACs",
+      "expected": "287.388 M"
+    },
+    {
+      "label": "application exit MACs",
+      "expected": "421.943 M"
+    },
+    {
+      "label": "application exit MACs",
+      "expected": "556.212 M"
+    }
+  ],
+  "scope": "Narrative accuracy, costs, measured latency and referenced images; generated tables have separate provenance ledger."
+}
