@@ -62,6 +62,6 @@ application=('## 4.4 预算约束下的分类应用示例\n\n'
              '样本按出口位置和预测正误分层，每个非空层选取原始索引最小的图像；这组示例用于说明路径，不用于估计整体准确率。'
              '程序以真实动态前向记录各残差阶段访问次数，并逐例核对缓存预测。'
              '第一、第二和最终出口的累计成本分别为 287.388 M、421.943 M 和 556.212 M MACs；最终出口包含前两个辅助头的开销。\n')
-out=(title+'\n\n'+abstract+'\n'+body+'\n## 3 实验设置\n'+exp+'\n'+settings+'\n\n'+architecture+'\n\n'+analysis+'\n'+application+'\n'+fig7+'\n'+conclusion+'\n## 参考文献\n'+refs)
+out=(title+'\n\n'+abstract+'\n'+body+'\n## 3 实验设置\n'+exp+'\n'+settings+'\n\n'+architecture+'\n\n'+analysis+'\n'+application+'\n'+fig7+'\n'+conclusion+'\n## 代码与复现\n\n代码、结果与运行说明保存在 GitHub 私有仓库：https://github.com/vgoh64187-ui/adaptive-exit-cnn 。仓库 README 包含环境安装、数据准备、训练、推理与报告生成命令；模型权重副本和策略校验方式见仓库中的权重说明。\n\n## 参考文献\n'+refs)
 (root/'report_draft.md').write_text(out,encoding='utf-8')
 print('paper/report_draft.md assembled')

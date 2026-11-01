@@ -3,7 +3,8 @@
   "completed_runs": 15,
   "verified_weight_policy_pairs": 15,
   "narrative_checks": 41,
-  "report_sha256": "301caa7d1b28a615021706a99c60958ea4235b13dc6a6c080284f4c06bb648f9",
+  "report_sha256": "e30f3863df5862b4c49641211648ae32a022974c3fec45f5c4107e38bb1d239d",
   "repo": "https://github.com/vgoh64187-ui/adaptive-exit-cnn",
-  "scope": "Weights and policies checked locally against audited final summary; does not imply weights are uploaded or that experiment three identity is known."
+  "scope": "Weights and policies checked locally against audited final summary; does not imply weights are uploaded or that experiment three identity is known.",
+  "course_experiment_three": "User confirmed U-Net pedestrian segmentation; distinct from ResNet-18 classification."
 }
