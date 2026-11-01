@@ -2,7 +2,7 @@
 
 面向计算预算的局部—全局协同提前退出 CNN 课程研究项目。
 
-当前正在执行五类模型、三个种子的完整训练队列，尚无最终测试结果。完整计划见 PROJECT_PLAN.md，最新进度见 docs/STATUS.md。
+五类模型、三个随机种子的 15 组训练和冻结测试已完成；测试汇总见 `results/final/summary.json`，实验结果与计算预算详见 `paper/generated/`。论文仍在排版与核验阶段。完整计划见 PROJECT_PLAN.md。
 经典骨干采用 CIFAR 版 ResNet-18；现有教材未明确课程实验三任务，相关差异仍待课程材料核对。
 
 ## 结果真实性
@@ -24,6 +24,12 @@ uv venv --python 3.12 --seed .venv
 此依赖文件同时使用 PyPI 和 PyTorch 官方 CUDA 下载源，安装步骤使用 pip 的多索引解析。`uv pip install -r requirements.txt` 的默认首索引策略会把部分普通依赖限定到 PyTorch 源，因此不作为本项目的安装命令。也可使用 `python -m venv .venv` 创建自带 pip 的环境。
 
 Windows / Python 3.12 的独立环境已验证安装、22项行为测试、一轮CPU小规模训练及论文PDF生成，记录见 `docs/REPRODUCTION_CHECK.json`。需要锁定全部间接依赖时，使用 `python -m pip install -r requirements-lock.win-cuda.txt`；该锁定清单包含报告生成依赖。小规模训练仅验证流程，不作为性能结果。
+
+2026-11-01 在原实验环境再次运行测试套件，28 项通过。模型检查点和数据集未纳入 Git：克隆仓库后需按下方命令重新下载数据并训练，或者使用与 `docs/protocol_lock.json` 中 SHA-256 一致的已有检查点。现有冻结协议绑定原始运行文件，重新训练的权重即使配置相同也应重新生成协议锁和结果，不能直接冒用原锁。
+
+## 已完成的测试结果
+
+CIFAR-100 官方测试集上，单出口 ResNet-18 的三种子准确率为 77.19% ± 0.05%；验证目标预算为 65% 时，融合加蒸馏模型以 64.36% ± 0.69% 的实际平均计算比取得 75.32% ± 0.19% 的准确率。误差为三个独立训练种子的样本标准差，详细结果、策略和成本口径见 `paper/generated/budget_accuracy_table.md`。设备实测和一次 CPU 基线复测显示计时波动，不能直接由 MACs 换算延迟收益，见 `paper/results_analysis_draft.md`。
 
 ## 运行
 
