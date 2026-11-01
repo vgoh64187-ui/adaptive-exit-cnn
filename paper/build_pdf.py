@@ -16,7 +16,7 @@ from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle, KeepTogether, PageBreak
 import reportlab.lib.textsplit as textsplit
 import reportlab.platypus.paragraph as paragraph_engine
 
@@ -83,7 +83,9 @@ def build(source,math_dir,output,draft=False):
                                       ('TOPPADDING',(0,0),(-1,-1),7),('BOTTOMPADDING',(0,0),(-1,-1),8)]))
             story.append(table);continue
         if line.startswith('# '):story.append(Paragraph(inline(line[2:]),styles['title']));continue
-        if line.startswith('## '):story.append(Paragraph(inline(line[3:]),styles['h1']));continue
+        if line.startswith('## '):
+            if line=='## 参考文献':story.append(PageBreak())
+            story.append(Paragraph(inline(line[3:]),styles['h1']));continue
         if line.startswith('### '):story.append(Paragraph(inline(line[4:]),styles['h2']));continue
         match=re.fullmatch(r'!\[(.*?)\]\((.*?)\)',line)
         if match:

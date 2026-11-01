@@ -1,0 +1,92 @@
+[
+  {
+    "run": "baseline_seed42",
+    "file": "baseline_seed42.pt",
+    "sha256": "4b49a5fe956c33be1916f5a9a56883605a41bef37a75fde25344bd906c689ce2",
+    "bytes": 44953860
+  },
+  {
+    "run": "gap_seed42",
+    "file": "gap_seed42.pt",
+    "sha256": "b08765dd0e6f454bc752e0ccb99d47c089bdc7283143335496a6489961c6647f",
+    "bytes": 45109488
+  },
+  {
+    "run": "mlp_seed42",
+    "file": "mlp_seed42.pt",
+    "sha256": "c3aed518bd8470a95a29d3b5474de1b7a4fbac3b149ed3138da00708933d2e0a",
+    "bytes": 45785564
+  },
+  {
+    "run": "lg_seed42",
+    "file": "lg_seed42.pt",
+    "sha256": "48c2a19298b26aa6fcf5402b48587acfbf7ea58fc9e392892dc6d6178e5dcb67",
+    "bytes": 45793612
+  },
+  {
+    "run": "lg_kd_seed42",
+    "file": "lg_kd_seed42.pt",
+    "sha256": "a3d863e702c111f19ce083af72ae902ad4e6e8ec696d2b268ce5e9a864cba890",
+    "bytes": 45793612
+  },
+  {
+    "run": "baseline_seed17",
+    "file": "baseline_seed17.pt",
+    "sha256": "23523d22efcc06f28d3218ca02836899909f7e03410c493b358f268ef0a4127c",
+    "bytes": 44953860
+  },
+  {
+    "run": "gap_seed17",
+    "file": "gap_seed17.pt",
+    "sha256": "5f3bb9e71c5608f7763656868c6d6b2483491cd0888cd065b0485de9b933bdd4",
+    "bytes": 45109488
+  },
+  {
+    "run": "mlp_seed17",
+    "file": "mlp_seed17.pt",
+    "sha256": "bfcaa2bcfe1d0ced68d6de1ceff1adb13d5cbdd1a3008e66cc658d03ab8891a6",
+    "bytes": 45785564
+  },
+  {
+    "run": "lg_seed17",
+    "file": "lg_seed17.pt",
+    "sha256": "d2fdfd6ebba16934da41f554acad6ce1846603d828335df45a2dbaa3e35f0e66",
+    "bytes": 45793612
+  },
+  {
+    "run": "lg_kd_seed17",
+    "file": "lg_kd_seed17.pt",
+    "sha256": "b2779bbd54c5cb31762145f426a82a23bd2006b84d6938fc272672339dea2f75",
+    "bytes": 45793612
+  },
+  {
+    "run": "baseline_seed73",
+    "file": "baseline_seed73.pt",
+    "sha256": "828c1f295f45427d1dafd0feb2a78cb06aa814c9a66474ec72c5f7a1fa7bdb56",
+    "bytes": 44953860
+  },
+  {
+    "run": "gap_seed73",
+    "file": "gap_seed73.pt",
+    "sha256": "26a3b3c263ef14b712f1947bd4c19118d267f43cb554b163cef8b6a5d2098b9a",
+    "bytes": 45109488
+  },
+  {
+    "run": "mlp_seed73",
+    "file": "mlp_seed73.pt",
+    "sha256": "7938b72c44a470c84edde506eda93de0c620f93385c28372ab5e0052de3ee487",
+    "bytes": 45785564
+  },
+  {
+    "run": "lg_seed73",
+    "file": "lg_seed73.pt",
+    "sha256": "4ad7407bd0a0890c12598f3c85f3855a31722ed98d7966c5890c60d7e46c2275",
+    "bytes": 45793612
+  },
+  {
+    "run": "lg_kd_seed73",
+    "file": "lg_kd_seed73.pt",
+    "sha256": "da004724389b7d86accb9ca975ae07f0b072aa5f6ed6c03c92de47802ada8f6e",
+    "bytes": 45793612
+  }
+]
