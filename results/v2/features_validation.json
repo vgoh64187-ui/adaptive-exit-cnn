@@ -1,0 +1,133 @@
+{
+  "scope": "exploratory description on 100 selection images, one per class; not a causal test",
+  "indices_sha256": "cb7101ef3ba517532927436377e0e8043f28120cf205a0de23b5920c2bacd713",
+  "sample_count": 100,
+  "runs": [
+    {
+      "model": "lg",
+      "seed": 17,
+      "weights_sha256": "d2fdfd6ebba16934da41f554acad6ce1846603d828335df45a2dbaa3e35f0e66",
+      "exit_means": [
+        {
+          "global_norm": 1.132322072982788,
+          "local_norm": 28.642230987548828,
+          "branch_cosine": 0.1971253901720047,
+          "gate_mean": 0.47183823585510254,
+          "normalized_spatial_entropy": 0.5399168729782104
+        },
+        {
+          "global_norm": 0.2901188135147095,
+          "local_norm": 28.514904022216797,
+          "branch_cosine": 0.5505034923553467,
+          "gate_mean": 0.7254434823989868,
+          "normalized_spatial_entropy": 0.1741488128900528
+        }
+      ]
+    },
+    {
+      "model": "lg",
+      "seed": 42,
+      "weights_sha256": "48c2a19298b26aa6fcf5402b48587acfbf7ea58fc9e392892dc6d6178e5dcb67",
+      "exit_means": [
+        {
+          "global_norm": 1.294749140739441,
+          "local_norm": 27.956159591674805,
+          "branch_cosine": 0.19995099306106567,
+          "gate_mean": 0.43550339341163635,
+          "normalized_spatial_entropy": 0.5568404197692871
+        },
+        {
+          "global_norm": 0.2961442768573761,
+          "local_norm": 27.909730911254883,
+          "branch_cosine": 0.5428016185760498,
+          "gate_mean": 0.7126126885414124,
+          "normalized_spatial_entropy": 0.18822355568408966
+        }
+      ]
+    },
+    {
+      "model": "lg",
+      "seed": 73,
+      "weights_sha256": "4ad7407bd0a0890c12598f3c85f3855a31722ed98d7966c5890c60d7e46c2275",
+      "exit_means": [
+        {
+          "global_norm": 1.1538357734680176,
+          "local_norm": 26.38595962524414,
+          "branch_cosine": 0.20529960095882416,
+          "gate_mean": 0.5027179718017578,
+          "normalized_spatial_entropy": 0.5797619819641113
+        },
+        {
+          "global_norm": 0.3052516281604767,
+          "local_norm": 28.889141082763672,
+          "branch_cosine": 0.5436740517616272,
+          "gate_mean": 0.7174596190452576,
+          "normalized_spatial_entropy": 0.1838962584733963
+        }
+      ]
+    },
+    {
+      "model": "lg_kd",
+      "seed": 17,
+      "weights_sha256": "b2779bbd54c5cb31762145f426a82a23bd2006b84d6938fc272672339dea2f75",
+      "exit_means": [
+        {
+          "global_norm": 6.8069305419921875,
+          "local_norm": 18.457548141479492,
+          "branch_cosine": 0.12663903832435608,
+          "gate_mean": 0.3710152506828308,
+          "normalized_spatial_entropy": 0.6410850286483765
+        },
+        {
+          "global_norm": 0.5970927476882935,
+          "local_norm": 20.034250259399414,
+          "branch_cosine": 0.683183491230011,
+          "gate_mean": 0.7140284180641174,
+          "normalized_spatial_entropy": 0.4357215166091919
+        }
+      ]
+    },
+    {
+      "model": "lg_kd",
+      "seed": 42,
+      "weights_sha256": "a3d863e702c111f19ce083af72ae902ad4e6e8ec696d2b268ce5e9a864cba890",
+      "exit_means": [
+        {
+          "global_norm": 6.728493690490723,
+          "local_norm": 18.44341278076172,
+          "branch_cosine": 0.13082370162010193,
+          "gate_mean": 0.3524010479450226,
+          "normalized_spatial_entropy": 0.648501455783844
+        },
+        {
+          "global_norm": 0.5881698727607727,
+          "local_norm": 19.79265594482422,
+          "branch_cosine": 0.7012847661972046,
+          "gate_mean": 0.6985880136489868,
+          "normalized_spatial_entropy": 0.422425776720047
+        }
+      ]
+    },
+    {
+      "model": "lg_kd",
+      "seed": 73,
+      "weights_sha256": "da004724389b7d86accb9ca975ae07f0b072aa5f6ed6c03c92de47802ada8f6e",
+      "exit_means": [
+        {
+          "global_norm": 7.183410167694092,
+          "local_norm": 19.41761589050293,
+          "branch_cosine": 0.11502319574356079,
+          "gate_mean": 0.3489932715892792,
+          "normalized_spatial_entropy": 0.6186971068382263
+        },
+        {
+          "global_norm": 0.5712935924530029,
+          "local_norm": 19.481796264648438,
+          "branch_cosine": 0.6685959696769714,
+          "gate_mean": 0.7150952219963074,
+          "normalized_spatial_entropy": 0.4455011487007141
+        }
+      ]
+    }
+  ]
+}

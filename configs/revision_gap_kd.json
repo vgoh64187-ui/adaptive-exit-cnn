@@ -1,0 +1,12 @@
+{
+  "description": "Post-review GAP plus distillation control, fixed recipe and seeds, no retuning from official test",
+  "epochs": 160,
+  "batch_size": 128,
+  "workers": 2,
+  "minimum_baseline_validation": 0.7,
+  "runs": [
+    {"name": "gap_kd_seed42", "head": "gap", "seed": 42, "kd": 0.5},
+    {"name": "gap_kd_seed17", "head": "gap", "seed": 17, "kd": 0.5},
+    {"name": "gap_kd_seed73", "head": "gap", "seed": 73, "kd": 0.5}
+  ]
+}

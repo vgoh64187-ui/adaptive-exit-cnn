@@ -1,0 +1,47 @@
+{
+  "scope": "V2 exploratory one-seed screening, fixed before the completion of first V2 training",
+  "common": {
+    "head": "residual_local_global",
+    "seed": 42,
+    "epochs": 160,
+    "batch_size": 128,
+    "workers": 2
+  },
+  "runs": [
+    {
+      "name": "residual_seed42",
+      "kd": 0.0,
+      "kd_start": 0,
+      "kd_ramp": 0
+    },
+    {
+      "name": "residual_kd_seed42",
+      "kd": 0.5,
+      "kd_start": 0,
+      "kd_ramp": 0
+    },
+    {
+      "name": "residual_delayed_kd_seed42",
+      "kd": 0.5,
+      "kd_start": 60,
+      "kd_ramp": 20
+    }
+  ],
+  "decision": "Use validation for screening. Expand selected structural and distillation settings to three seeds. Preserve all V2 runs and report results on the already-observed test as exploratory.",
+  "selection_rule": {
+    "selection_data": "pre-existing selection subset, weights selected on full validation; exploratory",
+    "policy": "confidence only, original 21-quantile threshold grid",
+    "budgets": [
+      0.55,
+      0.65,
+      0.75
+    ],
+    "objective": "mean validation accuracy over all listed budgets, unweighted; tie selects lower mean cost, then immediate KD",
+    "comparison": "choose between residual_kd_seed42 and residual_delayed_kd_seed42; always expand residual_seed42 as no-KD control",
+    "test_access": "new V2 test evaluation deferred until all six selected runs complete and are frozen",
+    "seeds_to_add": [
+      17,
+      73
+    ]
+  }
+}
