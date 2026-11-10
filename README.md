@@ -5,6 +5,12 @@
 五类模型、三个随机种子的 15 组训练和冻结测试已完成；测试汇总见 `results/final/summary.json`，实验结果与计算预算详见 `paper/generated/`。论文源文件、数值核验与排版脚本位于 `paper/`；完整计划见 PROJECT_PLAN.md。
 经典骨干采用 CIFAR 版 ResNet-18。用户已确认课程实验三为 U-Net 行人区域分割，本作业的分类任务和网络结构与之不同。
 
+## 审稿补充与 V2 实验
+
+原实验的 GAP 加蒸馏补充对照、结果与图表分别位于 configs/revision_gap_kd.json、results/revision/ 和 figures/revision/，对应论文稿件为 paper/report_revision.md。历史检查点与逐样本缓存保存在本地，复现须按协议重新训练或提供哈希匹配的原始文件。
+
+V2 的分阶段研究正在进行，独立代码和说明见 v2/README.md，实验计划见 v2/EXPERIMENT_PLAN.md。results/v2/ 和 figures/v2/ 当前包含 V1 缓存核验与验证子集路由、特征诊断，它们属于探索性结果，不是 V2 最终测试结论。V2 完成后将补充模型对照、冻结协议、汇总图表和论文。
+
 ## 结果真实性
 
 仅运行成功的结果可进入论文。数据划分、模型训练、阈值选择和最终测试分离；主结果多种子重复。
