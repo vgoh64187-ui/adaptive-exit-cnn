@@ -1,0 +1,9 @@
+[
+  {
+    "run": "residual_seed42",
+    "resume_after_epoch": 78,
+    "recorded_at_utc": "2026-11-10T14:23:54.104364+00:00",
+    "reason": "user resumed goal after interruption",
+    "reproducibility_note": "Restored model optimizer scaler Python NumPy Torch CUDA and DataLoader generator states; DataLoader worker augmentation RNG sequences may differ after epoch-boundary restart."
+  }
+]
