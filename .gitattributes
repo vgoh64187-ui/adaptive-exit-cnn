@@ -7,3 +7,7 @@
 *.png binary
 *.pdf binary
 *.csv -text
+
+# V2 protocol hashes source bytes; keep those bytes intact on checkout.
+v2/*.py -text
+v2/src/*.py -text
