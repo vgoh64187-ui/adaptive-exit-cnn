@@ -2,6 +2,7 @@
 import unittest
 import numpy as np
 import torch
+from src.models import ResNet18 as OriginalResNet18
 from v2.routing_validation import evaluate, select
 from v2.src.models import ExitPolicy, ResNet18, ResidualLocalGlobalHead, route_cached
 
@@ -18,6 +19,15 @@ class V2RegressionTests(unittest.TestCase):
         head.train()
         head(inputs).square().mean().backward()
         self.assertGreater(head.gamma.grad.abs().item(), 0)
+
+    def test_common_parameters_match_v1_initialization(self):
+        torch.manual_seed(42)
+        original = OriginalResNet18(head="local_global").state_dict()
+        torch.manual_seed(42)
+        changed = ResNet18(head="residual_local_global").state_dict()
+        self.assertEqual(set(changed) - set(original), {"exits.0.gamma", "exits.1.gamma"})
+        for name, value in original.items():
+            torch.testing.assert_close(value, changed[name], rtol=0, atol=0)
 
     def test_dynamic_path_matches_cached_outputs(self):
         torch.manual_seed(9)

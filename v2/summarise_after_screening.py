@@ -17,4 +17,6 @@ output=Path("results/v2/final_comparison.json")
 if not output.exists():
     subprocess.run([sys.executable,"-u","-m","v2.summarise_v2"],check=True)
 subprocess.run([sys.executable,"-u","v2/plot_final_comparison.py"],check=True)
-print("Audited comparison and plots complete",flush=True)
+if not Path("paper/report_v2.md").exists():
+    subprocess.run([sys.executable,"-u","-m","v2.assemble_paper_v2"],check=True)
+print("Audited comparison, plots and paper source complete",flush=True)

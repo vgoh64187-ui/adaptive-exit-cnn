@@ -66,7 +66,9 @@ while i<len(lines):
   d.add_paragraph().paragraph_format.space_after=Pt(2);continue
  if line.startswith('> '):continue
  p=d.add_paragraph();p.paragraph_format.space_after=Pt(5)
- if line.startswith('表 '):p.alignment=WD_ALIGN_PARAGRAPH.CENTER;p.paragraph_format.keep_with_next=True
+ next_line=next((item.strip() for item in lines[i:] if item.strip()),'')
+ if re.match(r'^表 \d+ ',line) and next_line.startswith('|'):
+  p.alignment=WD_ALIGN_PARAGRAPH.CENTER;p.paragraph_format.keep_with_next=True
  elif not line.startswith('[') and not line.startswith('关键词'):p.paragraph_format.first_line_indent=Cm(.7)
  inline(p,line)
 footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER;fld=OxmlElement('w:fldSimple');fld.set(qn('w:instr'),'PAGE');footer._p.append(fld)

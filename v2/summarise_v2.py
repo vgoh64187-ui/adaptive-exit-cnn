@@ -25,6 +25,9 @@ def read_record(path,budget):
                 exit_counts=record["exit_counts"],n=record["n"],
                 harmful_early_exit_fraction=record["harmful_early_exit_fraction"],
                 beneficial_early_exit_fraction=record["beneficial_early_exit_fraction"],
+                exit_accuracy=data["exit_accuracy"],
+                parameter_count=data["profile"]["parameters"],
+                path_macs=data["profile"]["exit_macs"],
                 final_exit_accuracy=data["exit_accuracy"][-1],
                 metrics_sha256=sha(path/"test_metrics.json"))
 
@@ -39,6 +42,15 @@ def main():
     for r in audit["runs"]:
         if r["metrics_sha256"]!=sha(V2ROOT/r["run"]/"test_metrics.json") or r["protocol_sha256"]!=sha(lock):
             raise RuntimeError("Audited results changed")
+    original_audit=json.loads((ROOT/"results/v2/v1_full_audit.json").read_text(encoding="utf-8"))
+    verified={r["run"]:r for r in original_audit["runs"]}
+    for old_model in ("gap","lg","lg_kd"):
+        for seed in (17,42,73):
+            name=f"{old_model}_seed{seed}"
+            path=ROOT/"runs"/name
+            if (name not in verified or verified[name]["metrics_sha256"]!=sha(path/"test_metrics.json")
+                    or verified[name]["prediction_sha256"]!=sha(path/"test_predictions.npz")):
+                raise RuntimeError("V1 audited result changed: "+name)
     chosen=selection["selected_kd"]
     prefix="residual_kd" if chosen=="residual_kd_seed42" else "residual_delayed_kd"
     groups={"V1 GAP":(ROOT/"runs","gap"),
@@ -56,6 +68,7 @@ def main():
             result["groups"][label][str(budget)]=dict(per_seed=rows,
                 accuracy=summarize([x["accuracy"] for x in rows]),
                 cost_ratio=summarize([x["cost_ratio"] for x in rows]),
+                exit_accuracy=[summarize([x["exit_accuracy"][i] for x in rows]) for i in range(3)],
                 final_exit_accuracy=summarize([x["final_exit_accuracy"] for x in rows]),
                 compliant=sum(x["cost_ratio"]<=budget for x in rows))
     comparisons=(("V2 residual","V1 local-global"),

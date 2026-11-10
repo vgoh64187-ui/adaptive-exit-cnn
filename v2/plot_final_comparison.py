@@ -15,6 +15,9 @@ plt.rcParams.update({"font.sans-serif":["Microsoft YaHei","SimHei","DejaVu Sans"
 groups=[("V1 GAP","#367ab1","o"),("V1 local-global","#d57a23","s"),
         ("V1 local-global + KD","#7164a7","^"),("V2 residual","#238e72","D"),
         ("V2 residual + selected KD","#b93f55","P")]
+labels_cn={"V1 GAP":"V1 GAP 出口","V1 local-global":"V1 局部—全局",
+           "V1 local-global + KD":"V1 融合 + 蒸馏","V2 residual":"V2 残差融合",
+           "V2 residual + selected KD":"V2 残差融合 + 蒸馏"}
 budgets=("0.55","0.65","0.75","0.85")
 fig,axes=plt.subplots(1,2,figsize=(10.4,4.2),constrained_layout=True)
 for label,color,marker in groups:
@@ -24,12 +27,12 @@ for label,color,marker in groups:
     xerr=[100*r["cost_ratio"]["sample_sd"] for r in records]
     yerr=[100*r["accuracy"]["sample_sd"] for r in records]
     axes[0].errorbar(x,y,xerr=xerr,yerr=yerr,fmt=marker+"-",color=color,
-                     capsize=2,lw=1,markersize=4,label=label)
+                     capsize=2,lw=1,markersize=4,label=labels_cn[label])
     for seed_i in range(3):
         xs=[100*r["per_seed"][seed_i]["cost_ratio"] for r in records]
         ys=[100*r["per_seed"][seed_i]["accuracy"] for r in records]
         axes[0].scatter(xs,ys,s=7,color=color,alpha=.4)
-    axes[1].plot([55,65,75,85],y,marker=marker,color=color,lw=1,label=label)
+    axes[1].plot([55,65,75,85],y,marker=marker,color=color,lw=1,label=labels_cn[label])
     axes[1].fill_between([55,65,75,85],
         np.array(y)-np.array(yerr),np.array(y)+np.array(yerr),color=color,alpha=.10)
 axes[0].set_title("(a) 测试准确率与实际计算比")
@@ -73,3 +76,6 @@ fig.legend(handles=handles,loc="outside lower center",ncol=3,title="验证目标
 for ext in ("png","pdf","svg"):
     fig.savefig(out/f"v2_paired_effects.{ext}",dpi=300,bbox_inches="tight")
 print(out)
+
+import subprocess, sys
+subprocess.run([sys.executable,"-m","v2.plot_v2_latency"],check=True)

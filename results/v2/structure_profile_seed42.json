@@ -1,0 +1,29 @@
+{
+  "scope": "seed-42 V2 selected checkpoint; validation-stage diagnosis",
+  "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs",
+  "excluded_operations_note": "Scalar and elementwise residual/gating operations, activation, normalization and dispatch are not included; identical counted MACs do not establish identical runtime.",
+  "v1": {
+    "parameters": 11427566,
+    "exit_macs": [
+      287388160,
+      421942784,
+      556211712
+    ],
+    "profile_sha256": "fc46c32f2513dafc06b5278188e2724dfbc1293ca0ad0b767e85a349585e50fb"
+  },
+  "v2": {
+    "parameters": 11427568,
+    "exit_macs": [
+      287388160,
+      421942784,
+      556211712
+    ],
+    "profile_sha256": "0562ee5d1a0665f8c688cd83342af95cf406219dddb4d5c52c3c568c186a87ca",
+    "checkpoint_sha256": "ea9ded8b448493bcb2432755dcb3317e98c8a3aa87803df38abb929b6277227f",
+    "selected_epoch": 155,
+    "gamma": [
+      -9.470246315002441,
+      -6.464339733123779
+    ]
+  }
+}
