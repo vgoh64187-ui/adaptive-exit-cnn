@@ -1,0 +1,43 @@
+{
+  "parameters": 11427568,
+  "backbone_macs": 555468800,
+  "exit_macs": [
+    287388160,
+    421942784,
+    556211712
+  ],
+  "components": {
+    "stem.0": 1769472,
+    "stages.0.0.conv1": 37748736,
+    "stages.0.0.conv2": 37748736,
+    "stages.0.1.conv1": 37748736,
+    "stages.0.1.conv2": 37748736,
+    "stages.1.0.conv1": 18874368,
+    "stages.1.0.conv2": 37748736,
+    "stages.1.0.shortcut.0": 2097152,
+    "stages.1.1.conv1": 37748736,
+    "stages.1.1.conv2": 37748736,
+    "exits.0.local.0": 294912,
+    "exits.0.pool.score": 32768,
+    "exits.0.pool": 32768,
+    "exits.0.gate": 32768,
+    "exits.0.fc": 12800,
+    "stages.2.0.conv1": 18874368,
+    "stages.2.0.conv2": 37748736,
+    "stages.2.0.shortcut.0": 2097152,
+    "stages.2.1.conv1": 37748736,
+    "stages.2.1.conv2": 37748736,
+    "exits.1.local.0": 147456,
+    "exits.1.pool.score": 16384,
+    "exits.1.pool": 16384,
+    "exits.1.gate": 131072,
+    "exits.1.fc": 25600,
+    "stages.3.0.conv1": 18874368,
+    "stages.3.0.conv2": 37748736,
+    "stages.3.0.shortcut.0": 2097152,
+    "stages.3.1.conv1": 37748736,
+    "stages.3.1.conv2": 37748736,
+    "final_head.fc": 51200
+  },
+  "convention": "Conv/Linear and attention weighted sums; 1 MAC = 2 FLOPs"
+}

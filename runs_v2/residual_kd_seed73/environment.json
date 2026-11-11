@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "numpy": "2.2.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cuda": "12.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "resume_note": "Epoch-boundary recovery; worker augmentation RNG may differ on resumed runs."
+}

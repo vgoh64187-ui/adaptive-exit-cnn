@@ -1,0 +1,27 @@
+{
+  "head": "residual_local_global",
+  "epochs": 160,
+  "batch_size": 128,
+  "workers": 2,
+  "seed": 42,
+  "width": 64,
+  "lr": 0.1,
+  "weight_decay": 0.0005,
+  "kd": 0.5,
+  "temperature": 3.0,
+  "kd_start": 0,
+  "kd_ramp": 0,
+  "limit": 0,
+  "out": "D:\\Hu\\\u5b66\u4e60\\\u8bfe\u7a0b\u5b66\u4e60\\\u795e\u7ecf\u7f51\u7edc\u4e0e\u6df1\u5ea6\u5b66\u4e60\\adaptive-exit-cnn\\runs_v2\\residual_kd_seed42",
+  "data": "data",
+  "resume": false,
+  "cpu": false,
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "source_sha256": "d62fc2b25880723d2342eb5201f093347602fd3d62643579ea5cdff6fd1e94fd",
+  "model": {
+    "classes": 100,
+    "head": "residual_local_global",
+    "width": 64
+  },
+  "smoke_only": false
+}

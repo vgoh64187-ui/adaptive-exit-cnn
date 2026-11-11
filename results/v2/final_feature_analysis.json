@@ -1,0 +1,358 @@
+{
+  "scope": "exploratory description of 100 selection images, one per class; no causal inference",
+  "n": 100,
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "indices_sha256": "cb7101ef3ba517532927436377e0e8043f28120cf205a0de23b5920c2bacd713",
+  "selection_sha256": "f24f64bbfec275dbe9d27c64f6ea5ea76cfa66760f5b6096fbc98bbb1d580290",
+  "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b",
+  "runs": [
+    {
+      "group": "V1 local-global",
+      "seed": 17,
+      "weights_sha256": "d2fdfd6ebba16934da41f554acad6ce1846603d828335df45a2dbaa3e35f0e66",
+      "exits": [
+        {
+          "global_norm": 1.132322072982788,
+          "local_norm": 28.642230987548828,
+          "correction_norm": 28.15924835205078,
+          "fused_norm": 28.384695053100586,
+          "gate_mean": 0.47183823585510254,
+          "normalized_spatial_entropy": 0.5399168729782104,
+          "correction_over_global": 24.86858555876515,
+          "local_over_global": 25.295127306048908,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.2901188135147095,
+          "local_norm": 28.514904022216797,
+          "correction_norm": 27.317110061645508,
+          "fused_norm": 27.470970153808594,
+          "gate_mean": 0.7254434823989868,
+          "normalized_spatial_entropy": 0.1741488128900528,
+          "correction_over_global": 94.158354402137,
+          "local_over_global": 98.28698689604646,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V1 local-global",
+      "seed": 42,
+      "weights_sha256": "48c2a19298b26aa6fcf5402b48587acfbf7ea58fc9e392892dc6d6178e5dcb67",
+      "exits": [
+        {
+          "global_norm": 1.294749140739441,
+          "local_norm": 27.956159591674805,
+          "correction_norm": 27.316211700439453,
+          "fused_norm": 27.571481704711914,
+          "gate_mean": 0.43550339341163635,
+          "normalized_spatial_entropy": 0.5568404197692871,
+          "correction_over_global": 21.09768667993783,
+          "local_over_global": 21.591950681433804,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.2961442768573761,
+          "local_norm": 27.909730911254883,
+          "correction_norm": 26.74480438232422,
+          "fused_norm": 26.900270462036133,
+          "gate_mean": 0.7126126885414124,
+          "normalized_spatial_entropy": 0.18822355568408966,
+          "correction_over_global": 90.3100497707899,
+          "local_over_global": 94.24369502401792,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V1 local-global",
+      "seed": 73,
+      "weights_sha256": "4ad7407bd0a0890c12598f3c85f3855a31722ed98d7966c5890c60d7e46c2275",
+      "exits": [
+        {
+          "global_norm": 1.1538357734680176,
+          "local_norm": 26.38595962524414,
+          "correction_norm": 25.958110809326172,
+          "fused_norm": 26.200546264648438,
+          "gate_mean": 0.5027179718017578,
+          "normalized_spatial_entropy": 0.5797619819641113,
+          "correction_over_global": 22.49723176055235,
+          "local_over_global": 22.86803740357034,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.3052516281604767,
+          "local_norm": 28.889141082763672,
+          "correction_norm": 27.804733276367188,
+          "fused_norm": 27.964313507080078,
+          "gate_mean": 0.7174596190452576,
+          "normalized_spatial_entropy": 0.1838962584733963,
+          "correction_over_global": 91.08791145169486,
+          "local_over_global": 94.64041602941457,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V1 local-global + KD",
+      "seed": 17,
+      "weights_sha256": "b2779bbd54c5cb31762145f426a82a23bd2006b84d6938fc272672339dea2f75",
+      "exits": [
+        {
+          "global_norm": 6.8069305419921875,
+          "local_norm": 18.457548141479492,
+          "correction_norm": 11.716775894165039,
+          "fused_norm": 13.046233177185059,
+          "gate_mean": 0.3710152506828308,
+          "normalized_spatial_entropy": 0.6410850286483765,
+          "correction_over_global": 1.7213009332009261,
+          "local_over_global": 2.7115816780580095,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.5970927476882935,
+          "local_norm": 20.034250259399414,
+          "correction_norm": 16.735136032104492,
+          "fused_norm": 17.069377899169922,
+          "gate_mean": 0.7140284180641174,
+          "normalized_spatial_entropy": 0.4357215166091919,
+          "correction_over_global": 28.027699376514466,
+          "local_over_global": 33.55299547174889,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V1 local-global + KD",
+      "seed": 42,
+      "weights_sha256": "a3d863e702c111f19ce083af72ae902ad4e6e8ec696d2b268ce5e9a864cba890",
+      "exits": [
+        {
+          "global_norm": 6.728493690490723,
+          "local_norm": 18.44341278076172,
+          "correction_norm": 11.415968894958496,
+          "fused_norm": 12.850052833557129,
+          "gate_mean": 0.3524010479450226,
+          "normalized_spatial_entropy": 0.648501455783844,
+          "correction_over_global": 1.6966604146619786,
+          "local_over_global": 2.7410908933194826,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.5881698727607727,
+          "local_norm": 19.79265594482422,
+          "correction_norm": 16.955604553222656,
+          "fused_norm": 17.289234161376953,
+          "gate_mean": 0.6985880136489868,
+          "normalized_spatial_entropy": 0.422425776720047,
+          "correction_over_global": 28.82773385456796,
+          "local_over_global": 33.65125767479511,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V1 local-global + KD",
+      "seed": 73,
+      "weights_sha256": "da004724389b7d86accb9ca975ae07f0b072aa5f6ed6c03c92de47802ada8f6e",
+      "exits": [
+        {
+          "global_norm": 7.183410167694092,
+          "local_norm": 19.41761589050293,
+          "correction_norm": 11.665247917175293,
+          "fused_norm": 12.940468788146973,
+          "gate_mean": 0.3489932715892792,
+          "normalized_spatial_entropy": 0.6186971068382263,
+          "correction_over_global": 1.6239150549466526,
+          "local_over_global": 2.703119470725709,
+          "gamma": 1.0
+        },
+        {
+          "global_norm": 0.5712935924530029,
+          "local_norm": 19.481796264648438,
+          "correction_norm": 16.57203483581543,
+          "fused_norm": 16.89560317993164,
+          "gate_mean": 0.7150952219963074,
+          "normalized_spatial_entropy": 0.4455011487007141,
+          "correction_over_global": 29.00791301484572,
+          "local_over_global": 34.101198616630896,
+          "gamma": 1.0
+        }
+      ]
+    },
+    {
+      "group": "V2 residual",
+      "seed": 17,
+      "weights_sha256": "dbada1922001d96de241c24edee00f5e6e8173b40fcd6d1af390aba4bb793718",
+      "exits": [
+        {
+          "global_norm": 4.139256477355957,
+          "local_norm": 8.76150131225586,
+          "correction_norm": 51.2789421081543,
+          "fused_norm": 50.43229675292969,
+          "gate_mean": 0.938632607460022,
+          "normalized_spatial_entropy": 0.6845136284828186,
+          "correction_over_global": 12.388442800942325,
+          "local_over_global": 2.116684810469262,
+          "gamma": -9.414095878601074
+        },
+        {
+          "global_norm": 2.638455867767334,
+          "local_norm": 12.474394798278809,
+          "correction_norm": 41.352149963378906,
+          "fused_norm": 41.11579132080078,
+          "gate_mean": 0.8887225389480591,
+          "normalized_spatial_entropy": 0.32297423481941223,
+          "correction_over_global": 15.672860201512929,
+          "local_over_global": 4.727914895478113,
+          "gamma": -6.659941673278809
+        }
+      ]
+    },
+    {
+      "group": "V2 residual",
+      "seed": 42,
+      "weights_sha256": "ea9ded8b448493bcb2432755dcb3317e98c8a3aa87803df38abb929b6277227f",
+      "exits": [
+        {
+          "global_norm": 4.210208892822266,
+          "local_norm": 9.08528995513916,
+          "correction_norm": 53.236305236816406,
+          "fused_norm": 52.438804626464844,
+          "gate_mean": 0.9405277371406555,
+          "normalized_spatial_entropy": 0.6629763841629028,
+          "correction_over_global": 12.64457574244732,
+          "local_over_global": 2.157919045448821,
+          "gamma": -9.470246315002441
+        },
+        {
+          "global_norm": 2.367661952972412,
+          "local_norm": 13.387884140014648,
+          "correction_norm": 47.2961311340332,
+          "fused_norm": 46.990108489990234,
+          "gate_mean": 0.8891547918319702,
+          "normalized_spatial_entropy": 0.3038672208786011,
+          "correction_over_global": 19.97588003416478,
+          "local_over_global": 5.654474500976468,
+          "gamma": -6.464339733123779
+        }
+      ]
+    },
+    {
+      "group": "V2 residual",
+      "seed": 73,
+      "weights_sha256": "091ea9574191aa443c8ec7632d3d1b8bab01dc5715533eb9f5c91834cd259c27",
+      "exits": [
+        {
+          "global_norm": 4.142030239105225,
+          "local_norm": 8.236002922058105,
+          "correction_norm": 53.04865646362305,
+          "fused_norm": 52.193111419677734,
+          "gate_mean": 0.9317867755889893,
+          "normalized_spatial_entropy": 0.6907398104667664,
+          "correction_over_global": 12.807404437270066,
+          "local_over_global": 1.9883975844264417,
+          "gamma": -9.411136627197266
+        },
+        {
+          "global_norm": 2.465808391571045,
+          "local_norm": 12.855507850646973,
+          "correction_norm": 46.898826599121094,
+          "fused_norm": 46.5477294921875,
+          "gate_mean": 0.8824880719184875,
+          "normalized_spatial_entropy": 0.3173656761646271,
+          "correction_over_global": 19.019655687537163,
+          "local_over_global": 5.213506408118078,
+          "gamma": -6.516947269439697
+        }
+      ]
+    },
+    {
+      "group": "V2 residual + selected KD",
+      "seed": 17,
+      "weights_sha256": "3d484f2f48dca28c93983d58a460879a089e0353f0b523ddf09889daff713785",
+      "exits": [
+        {
+          "global_norm": 3.4016056060791016,
+          "local_norm": 11.102034568786621,
+          "correction_norm": 23.026233673095703,
+          "fused_norm": 22.544492721557617,
+          "gate_mean": 0.5209895968437195,
+          "normalized_spatial_entropy": 0.6480410695075989,
+          "correction_over_global": 6.7692249895005165,
+          "local_over_global": 3.263763015014402,
+          "gamma": -8.768967628479004
+        },
+        {
+          "global_norm": 1.9358612298965454,
+          "local_norm": 10.290035247802734,
+          "correction_norm": 27.69781494140625,
+          "fused_norm": 27.361343383789062,
+          "gate_mean": 0.779967725276947,
+          "normalized_spatial_entropy": 0.4492642879486084,
+          "correction_over_global": 14.307748155525823,
+          "local_over_global": 5.3154818583523396,
+          "gamma": -6.30802583694458
+        }
+      ]
+    },
+    {
+      "group": "V2 residual + selected KD",
+      "seed": 42,
+      "weights_sha256": "fedaed234f3087e79df3c0a8ddd6731cc856fe2359e27a07a86de57bb593c5d0",
+      "exits": [
+        {
+          "global_norm": 3.5399954319000244,
+          "local_norm": 11.582727432250977,
+          "correction_norm": 22.3699951171875,
+          "fused_norm": 21.93529510498047,
+          "gate_mean": 0.4601932466030121,
+          "normalized_spatial_entropy": 0.6459454298019409,
+          "correction_over_global": 6.319215814688449,
+          "local_over_global": 3.2719611239820643,
+          "gamma": -8.609695434570312
+        },
+        {
+          "global_norm": 1.9397995471954346,
+          "local_norm": 9.855016708374023,
+          "correction_norm": 27.319046020507812,
+          "fused_norm": 26.986106872558594,
+          "gate_mean": 0.7656481862068176,
+          "normalized_spatial_entropy": 0.45450538396835327,
+          "correction_over_global": 14.083437672725378,
+          "local_over_global": 5.080430461292984,
+          "gamma": -6.27114200592041
+        }
+      ]
+    },
+    {
+      "group": "V2 residual + selected KD",
+      "seed": 73,
+      "weights_sha256": "3e0eabc4820ff28260155052d2d16028f77935caf9655134862a5d6fade90d9e",
+      "exits": [
+        {
+          "global_norm": 3.324014186859131,
+          "local_norm": 10.99445915222168,
+          "correction_norm": 21.788278579711914,
+          "fused_norm": 21.348215103149414,
+          "gate_mean": 0.4889174699783325,
+          "normalized_spatial_entropy": 0.6636636257171631,
+          "correction_over_global": 6.5548091418646175,
+          "local_over_global": 3.307584906131334,
+          "gamma": -8.53258228302002
+        },
+        {
+          "global_norm": 1.8564409017562866,
+          "local_norm": 11.583179473876953,
+          "correction_norm": 27.701374053955078,
+          "fused_norm": 27.295799255371094,
+          "gate_mean": 0.7939009666442871,
+          "normalized_spatial_entropy": 0.4077220857143402,
+          "correction_over_global": 14.921764559134731,
+          "local_over_global": 6.239455003883335,
+          "gamma": -6.2129011154174805
+        }
+      ]
+    }
+  ]
+}

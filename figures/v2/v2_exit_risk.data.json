@@ -1,0 +1,407 @@
+{
+  "scope": "exploratory test comparison from audited per-seed results",
+  "summary_sha256": "e2b57b5419f543a8965117f6dccf70b3f3952b4c7c1c0c5cdd5a0b8928106d39",
+  "image_sha256": "a0a9cba49c21065fcb35a9c8966a4f7acaa36a639d3c5b90f7a72921c835c8cd",
+  "points": {
+    "V1 GAP": [
+      {
+        "seed": 17,
+        "accuracy": 0.7444999814033508,
+        "cost_ratio": 0.6480267434786616,
+        "exit_counts": [
+          5520,
+          3525,
+          955
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.012400000356137753,
+        "beneficial_early_exit_fraction": 0.012299999594688416,
+        "exit_accuracy": [
+          0.7092000246047974,
+          0.7487999796867371,
+          0.7445999979972839
+        ],
+        "parameter_count": 11258732,
+        "path_macs": [
+          286994944,
+          421238272,
+          555507200
+        ],
+        "final_exit_accuracy": 0.7445999979972839,
+        "metrics_sha256": "42c0f0a4cd023dc00de0121abe35e6cab2e8e906fd2eff8f47d0f999bef894da"
+      },
+      {
+        "seed": 42,
+        "accuracy": 0.7476000189781189,
+        "cost_ratio": 0.6504874346022674,
+        "exit_counts": [
+          4463,
+          5537,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.012799999676644802,
+        "beneficial_early_exit_fraction": 0.014100000262260437,
+        "exit_accuracy": [
+          0.7008000016212463,
+          0.7486000061035156,
+          0.7462999820709229
+        ],
+        "parameter_count": 11258732,
+        "path_macs": [
+          286994944,
+          421238272,
+          555507200
+        ],
+        "final_exit_accuracy": 0.7462999820709229,
+        "metrics_sha256": "2595bf5fa24ff1f7b36648ece920fa1a4471d50bf3a23f83c1c96e6f6795b50e"
+      },
+      {
+        "seed": 73,
+        "accuracy": 0.7497000098228455,
+        "cost_ratio": 0.6496415695455802,
+        "exit_counts": [
+          4498,
+          5502,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.014499999582767487,
+        "beneficial_early_exit_fraction": 0.014700000174343586,
+        "exit_accuracy": [
+          0.708899974822998,
+          0.7506999969482422,
+          0.7494999766349792
+        ],
+        "parameter_count": 11258732,
+        "path_macs": [
+          286994944,
+          421238272,
+          555507200
+        ],
+        "final_exit_accuracy": 0.7494999766349792,
+        "metrics_sha256": "474a31e8a699fd34d615bd310b5fbb884777c037ce1fd8f846d882ed70dba6bc"
+      }
+    ],
+    "V1 local-global": [
+      {
+        "seed": 17,
+        "accuracy": 0.7404000163078308,
+        "cost_ratio": 0.6382553212277629,
+        "exit_counts": [
+          5010,
+          4990,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.04910000041127205,
+        "beneficial_early_exit_fraction": 0.025800000876188278,
+        "exit_accuracy": [
+          0.6435999870300293,
+          0.7523000240325928,
+          0.763700008392334
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.763700008392334,
+        "metrics_sha256": "bcfb35ce773ddc0d45666e2a545121b7bd984c837505f7795e67ed57e3da3da8"
+      },
+      {
+        "seed": 42,
+        "accuracy": 0.7412999868392944,
+        "cost_ratio": 0.6521087073462991,
+        "exit_counts": [
+          4957,
+          4523,
+          520
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.0414000004529953,
+        "beneficial_early_exit_fraction": 0.022099999710917473,
+        "exit_accuracy": [
+          0.6428999900817871,
+          0.7526999711990356,
+          0.7605999708175659
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7605999708175659,
+        "metrics_sha256": "77c8a267ba54b798a9bd04eac0ae2907f1791583ba4db408043f53416024ccd9"
+      },
+      {
+        "seed": 73,
+        "accuracy": 0.7451000213623047,
+        "cost_ratio": 0.6546518783298,
+        "exit_counts": [
+          4858,
+          4616,
+          526
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.04129999876022339,
+        "beneficial_early_exit_fraction": 0.021400000900030136,
+        "exit_accuracy": [
+          0.6453999876976013,
+          0.7505999803543091,
+          0.7649999856948853
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7649999856948853,
+        "metrics_sha256": "c54dadc6cb4bf6fa8e7980655a9ce716fc3edfbf3f005246e10f9def4ec2f993"
+      }
+    ],
+    "V1 local-global + KD": [
+      {
+        "seed": 17,
+        "accuracy": 0.7530999779701233,
+        "cost_ratio": 0.6402174340492212,
+        "exit_counts": [
+          4929,
+          5071,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.02290000021457672,
+        "beneficial_early_exit_fraction": 0.01810000091791153,
+        "exit_accuracy": [
+          0.6972000002861023,
+          0.7565000057220459,
+          0.7578999996185303
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7578999996185303,
+        "metrics_sha256": "14031a4584679908a81721b19d67f5e7ea6e31305c9e0c8e66d739be621a73b9"
+      },
+      {
+        "seed": 42,
+        "accuracy": 0.7551000118255615,
+        "cost_ratio": 0.6515991870218453,
+        "exit_counts": [
+          5464,
+          3529,
+          1007
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.016200000420212746,
+        "beneficial_early_exit_fraction": 0.011500000022351742,
+        "exit_accuracy": [
+          0.6973999738693237,
+          0.7555999755859375,
+          0.7598000168800354
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7598000168800354,
+        "metrics_sha256": "6d99673df03330ca06818ad9b4e10a25e21b3d598e3a609bf8d9aa820afce746"
+      },
+      {
+        "seed": 73,
+        "accuracy": 0.7513999938964844,
+        "cost_ratio": 0.6390062532952345,
+        "exit_counts": [
+          4979,
+          5021,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.02160000056028366,
+        "beneficial_early_exit_fraction": 0.016499999910593033,
+        "exit_accuracy": [
+          0.6930000185966492,
+          0.7545999884605408,
+          0.7565000057220459
+        ],
+        "parameter_count": 11427566,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7565000057220459,
+        "metrics_sha256": "a1e50cc9b3da60332f5fed800f8efc2d7ef5d40ff3e335c1de9625e5680392b7"
+      }
+    ],
+    "V2 residual": [
+      {
+        "seed": 17,
+        "accuracy": 0.7585999965667725,
+        "cost_ratio": 0.647630887455065,
+        "exit_counts": [
+          5073,
+          4476,
+          451
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.02879999950528145,
+        "beneficial_early_exit_fraction": 0.022600000724196434,
+        "exit_accuracy": [
+          0.7085999846458435,
+          0.7545999884605408,
+          0.7648000121116638
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7648000121116638,
+        "metrics_sha256": "a81bae84b4cd80288d2cff18d7cfefa564c1acb06cd94e004c79237063abb2d2"
+      },
+      {
+        "seed": 42,
+        "accuracy": 0.7563999891281128,
+        "cost_ratio": 0.6417328706793254,
+        "exit_counts": [
+          6483,
+          1897,
+          1620
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.02630000002682209,
+        "beneficial_early_exit_fraction": 0.020800000056624413,
+        "exit_accuracy": [
+          0.7063000202178955,
+          0.7541000247001648,
+          0.761900007724762
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.761900007724762,
+        "metrics_sha256": "ac4aa219398167aa67c2dcbc870c06711f7e41fcefdb783a2b1b8f432e808032"
+      },
+      {
+        "seed": 73,
+        "accuracy": 0.7583000063896179,
+        "cost_ratio": 0.6505625062217716,
+        "exit_counts": [
+          6351,
+          1796,
+          1853
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.02449999935925007,
+        "beneficial_early_exit_fraction": 0.018200000748038292,
+        "exit_accuracy": [
+          0.7046999931335449,
+          0.7583000063896179,
+          0.7645999789237976
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7645999789237976,
+        "metrics_sha256": "54b592216dead88020922f43f42e6e03317b3eca904a154ffd7c3b8e6429ab07"
+      }
+    ],
+    "V2 residual + selected KD": [
+      {
+        "seed": 17,
+        "accuracy": 0.7488999962806702,
+        "cost_ratio": 0.6404319476449443,
+        "exit_counts": [
+          5458,
+          4003,
+          539
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.014800000004470348,
+        "beneficial_early_exit_fraction": 0.011599999852478504,
+        "exit_accuracy": [
+          0.7250000238418579,
+          0.7490000128746033,
+          0.7520999908447266
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7520999908447266,
+        "metrics_sha256": "c2385745c321c7a36d72f6b2aac9f557afedd819b5c10f1752ac8c5bfe01e518"
+      },
+      {
+        "seed": 42,
+        "accuracy": 0.7544999718666077,
+        "cost_ratio": 0.6253199107751867,
+        "exit_counts": [
+          5544,
+          4456,
+          0
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.016100000590085983,
+        "beneficial_early_exit_fraction": 0.016899999231100082,
+        "exit_accuracy": [
+          0.7214000225067139,
+          0.7549999952316284,
+          0.7537000179290771
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7537000179290771,
+        "metrics_sha256": "ba1faf7f58704550d7c0dd6bfcaadbc15940cbe129e613b3f583e5fdc6f27ab4"
+      },
+      {
+        "seed": 73,
+        "accuracy": 0.7515000104904175,
+        "cost_ratio": 0.6342093059268135,
+        "exit_counts": [
+          6130,
+          2915,
+          955
+        ],
+        "n": 10000,
+        "harmful_early_exit_fraction": 0.013000000268220901,
+        "beneficial_early_exit_fraction": 0.011900000274181366,
+        "exit_accuracy": [
+          0.7218000292778015,
+          0.7519999742507935,
+          0.7526000142097473
+        ],
+        "parameter_count": 11427568,
+        "path_macs": [
+          287388160,
+          421942784,
+          556211712
+        ],
+        "final_exit_accuracy": 0.7526000142097473,
+        "metrics_sha256": "f55e14a239bbc89617efd8b31a86a30e8f6f30da40ebad70665b3bc840e07770"
+      }
+    ]
+  }
+}

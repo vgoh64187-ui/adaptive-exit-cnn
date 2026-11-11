@@ -11,3 +11,6 @@
 # V2 protocol hashes source bytes; keep those bytes intact on checkout.
 v2/*.py -text
 v2/src/*.py -text
+results/v2/phase1_validation_report.md -text
+paper/report_v2.md -text
+release/v2-evidence/** -text

@@ -1,0 +1,173 @@
+{
+  "scope": "exploratory seed-42 validation selection before V2 test",
+  "manifest_sha256": "df6088318ffb5a8b35dd82ef48c15c7bbaf7469c9904aeae54a9555363c37bd8",
+  "selection_rule": {
+    "selection_data": "pre-existing selection subset, weights selected on full validation; exploratory",
+    "policy": "confidence only, original 21-quantile threshold grid",
+    "budgets": [
+      0.55,
+      0.65,
+      0.75
+    ],
+    "objective": "mean validation accuracy over all listed budgets, unweighted; tie selects lower mean cost, then immediate KD",
+    "comparison": "choose between residual_kd_seed42 and residual_delayed_kd_seed42; always expand residual_seed42 as no-KD control",
+    "test_access": "new V2 test evaluation deferred until all six selected runs complete and are frozen",
+    "seeds_to_add": [
+      17,
+      73
+    ]
+  },
+  "control": {
+    "run": "residual_seed42",
+    "policy_sha256": "c9f2be3e36d2b8b41706090337b079c96530bea23061244827d9c2979934d363",
+    "mean_accuracy": 0.7461333274841309,
+    "mean_cost": 0.6425694504562632,
+    "per_budget": [
+      {
+        "accuracy": 0.7184000015258789,
+        "mean_macs": 300843622.4,
+        "cost_ratio": 0.5416030970596368,
+        "exit_counts": [
+          2250,
+          250,
+          0
+        ],
+        "n": 2500,
+        "early_exit_error_rate": 0.2815999984741211,
+        "harmful_early_exit_fraction": 0.0851999968290329,
+        "beneficial_early_exit_fraction": 0.04320000112056732
+      },
+      {
+        "accuracy": 0.7567999958992004,
+        "mean_macs": 355857891.7376,
+        "cost_ratio": 0.6406442481334685,
+        "exit_counts": [
+          1625,
+          477,
+          398
+        ],
+        "n": 2500,
+        "early_exit_error_rate": 0.16745956242084503,
+        "harmful_early_exit_fraction": 0.02280000038444996,
+        "beneficial_early_exit_fraction": 0.019200000911951065
+      },
+      {
+        "accuracy": 0.7631999850273132,
+        "mean_macs": 414080330.5472,
+        "cost_ratio": 0.7454610061756844,
+        "exit_counts": [
+          1125,
+          394,
+          981
+        ],
+        "n": 2500,
+        "early_exit_error_rate": 0.06517446041107178,
+        "harmful_early_exit_fraction": 0.00279999990016222,
+        "beneficial_early_exit_fraction": 0.00559999980032444
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "run": "residual_kd_seed42",
+      "policy_sha256": "563979a69a760bc24974eb169cda3ef8a465e44524dbe5ae74d91d9a7e2cd04c",
+      "mean_accuracy": 0.75,
+      "mean_cost": 0.6003487063016562,
+      "per_budget": [
+        {
+          "accuracy": 0.7347999811172485,
+          "mean_macs": 304549444.8128,
+          "cost_ratio": 0.5482746192275786,
+          "exit_counts": [
+            2250,
+            181,
+            69
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.2513369023799896,
+          "harmful_early_exit_fraction": 0.0551999993622303,
+          "beneficial_early_exit_fraction": 0.03880000114440918
+        },
+        {
+          "accuracy": 0.7576000094413757,
+          "mean_macs": 347937740.8,
+          "cost_ratio": 0.6263857498386949,
+          "exit_counts": [
+            1375,
+            1125,
+            0
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.24240000545978546,
+          "harmful_early_exit_fraction": 0.012400000356137753,
+          "beneficial_early_exit_fraction": 0.018799999728798866
+        },
+        {
+          "accuracy": 0.7576000094413757,
+          "mean_macs": 347937740.8,
+          "cost_ratio": 0.6263857498386949,
+          "exit_counts": [
+            1375,
+            1125,
+            0
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.24240000545978546,
+          "harmful_early_exit_fraction": 0.012400000356137753,
+          "beneficial_early_exit_fraction": 0.018799999728798866
+        }
+      ]
+    },
+    {
+      "run": "residual_delayed_kd_seed42",
+      "policy_sha256": "61a552900a9b144edb310dfac1879818c951c6b0ee807c42a0a61792e45a0afa",
+      "mean_accuracy": 0.7492000063260397,
+      "mean_cost": 0.6102366731188743,
+      "per_budget": [
+        {
+          "accuracy": 0.734000027179718,
+          "mean_macs": 300843622.4,
+          "cost_ratio": 0.5416030970596368,
+          "exit_counts": [
+            2250,
+            250,
+            0
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.26600000262260437,
+          "harmful_early_exit_fraction": 0.06599999964237213,
+          "beneficial_early_exit_fraction": 0.04520000144839287
+        },
+        {
+          "accuracy": 0.7559999823570251,
+          "mean_macs": 354665472.0,
+          "cost_ratio": 0.6384975573785603,
+          "exit_counts": [
+            1250,
+            1250,
+            0
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.24400000274181366,
+          "harmful_early_exit_fraction": 0.01600000075995922,
+          "beneficial_early_exit_fraction": 0.01720000058412552
+        },
+        {
+          "accuracy": 0.7576000094413757,
+          "mean_macs": 361393203.2,
+          "cost_ratio": 0.6506093649184257,
+          "exit_counts": [
+            1125,
+            1375,
+            0
+          ],
+          "n": 2500,
+          "early_exit_error_rate": 0.24240000545978546,
+          "harmful_early_exit_fraction": 0.014399999752640724,
+          "beneficial_early_exit_fraction": 0.01720000058412552
+        }
+      ]
+    }
+  ],
+  "selected_kd": "residual_kd_seed42"
+}

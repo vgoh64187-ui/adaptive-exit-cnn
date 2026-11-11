@@ -1,0 +1,20 @@
+{
+  "output": "提前退出CNN论文导读-V2.html",
+  "sha256": "3fe5e7c8a81e9084e7f30fbaa002e4c4ed57ba9496717466526ffdf2c742a9af",
+  "summary_sha256": "e2b57b5419f543a8965117f6dccf70b3f3952b4c7c1c0c5cdd5a0b8928106d39",
+  "word_sha256": "34672411df4d163855fa1eb309ad89aae8f83405ef87697df14f7c3f13e9dd09",
+  "original_explainer_sha256": "44c87bbf26bc61cae6777994964f127947e76a32754e137469b760d1c96d2954",
+  "paper_verification_sha256": "38f8f415ad55243b8d8afc2d96514faca6e23f1c5b1513da1a2e1dd2ea5f113c",
+  "embedded_v2_figures": 8,
+  "figure_sha256": {
+    "figures/v2/v2_head_mechanism.png": "18ee1c7e26b3795dc2d5d78c6ae7722ed70db2e409def183e671f72a40945cb0",
+    "figures/v2/v2_budget_accuracy.png": "ed31d74e7ee5fe9ab022ba70a260725b5cc336c026f462d647120ff86a3152dc",
+    "figures/v2/v2_paired_effects.png": "97139ac88ffbf633861027ee06071c1c0450d1f4486afe39425a98e1f42015f0",
+    "figures/v2/v2_latency_interleaved.png": "827677f34767171afb5a5be0ade4185fe6f90ac872df8a0d49910d7e9cbdaa01",
+    "figures/v2/learning_curves_seed42.png": "4cca709d0355df3f287cbf6fbbe0fd2046abe3a522c74a610a0a8c9824169db8",
+    "figures/v2/v2_feature_correction.png": "12eed2c320762e90ac12311f0192b405e081c8ec37b76a91a45e086b8c8f61ad",
+    "figures/v2/routing_validation_exploratory.png": "29597adff062a247cc27621657b66e829b763baf697c6caee1e79fdf76b9bc59",
+    "figures/v2/v2_exit_risk.png": "a0a9cba49c21065fcb35a9c8966a4f7acaa36a639d3c5b90f7a72921c835c8cd",
+    "figures/v2/v1_routing_reliability_valid_seeds.png": "562100bee039b59a9d10dd1a20267b0684e4fd1dfa4c4dae2bcc9b76763a466a"
+  }
+}

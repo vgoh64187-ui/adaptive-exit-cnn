@@ -1,0 +1,19 @@
+{
+  "scope": "V1 revision tables 5-11 recomputed from revision summaries; not narrative or figures",
+  "paper_sha256": "37e796c9bd2a34d9aac78f38d08c41dd9fbe9611ed3787d2aa3f659c08f54ed7",
+  "sources": {
+    "results\\revision\\routing_analysis.json": "6f8eaa75a16e75674872e812a855fed60f37e3462d6722c6fb3347f4533803e0",
+    "results\\revision\\latency_interleaved.json": "4adb2df68ed2e5649549233843883e6536e6b2a215783bd0b5c2c6b7a7881a99",
+    "results\\revision\\gap_kd_factorial.json": "6482c2d647e431dcab74c0ae4a64712f111d169e1f799c568b6530b0fc6ed56f"
+  },
+  "tables_verified": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "data_rows_verified": 62
+}

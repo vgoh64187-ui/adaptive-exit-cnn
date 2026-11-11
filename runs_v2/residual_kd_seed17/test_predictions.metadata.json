@@ -1,0 +1,9 @@
+{
+  "weights_sha256": "3d484f2f48dca28c93983d58a460879a089e0353f0b523ddf09889daff713785",
+  "split_sha256": "700cd0276d4e15abbaec0bc5a14d6bdfdc2b8363be4f47c9b23a2067960d3bb5",
+  "prediction_sha256": "f9c00b60e189790c812f210fb73549ddbeb906d18cb7c1a1c4e709f32e63ed26",
+  "split": "test",
+  "n": 10000,
+  "precision": "FP32",
+  "smoke_only": false
+}

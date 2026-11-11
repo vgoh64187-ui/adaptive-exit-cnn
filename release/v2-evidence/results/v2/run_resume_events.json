@@ -1,0 +1,26 @@
+[
+  {
+    "run": "residual_seed42",
+    "resume_after_epoch": 78,
+    "recorded_at_utc": "2026-11-10T14:23:54.104364+00:00",
+    "reason": "user resumed goal after interruption",
+    "reproducibility_note": "Restored model optimizer scaler Python NumPy Torch CUDA and DataLoader generator states; DataLoader worker augmentation RNG sequences may differ after epoch-boundary restart."
+  },
+  {
+    "run": "residual_delayed_kd_seed42",
+    "resume_after_epoch": 35,
+    "recorded_at_utc": "2026-11-11T01:59:57.790079+00:00",
+    "reason": "user resumed goal after requested pause",
+    "checkpoint_sha256": "3e3171d9bc55b1dcd2fc632e624f5f2f564b384733a5679f97a02a6485934940",
+    "reproducibility_note": "Restored model optimizer scaler Python NumPy Torch CUDA and DataLoader generator states; DataLoader worker augmentation RNG sequences may differ after epoch-boundary restart.",
+    "correction_note": "Initially recorded as 34 based on the history at pause; the resumed log begins at epoch 36 while history has no epoch 35 row. The checkpoint can advance before the history append; epoch 35 measurements are unavailable and are not reconstructed."
+  },
+  {
+    "run": "residual_seed73",
+    "resume_after_epoch": 23,
+    "recorded_at_utc": "2026-11-11T05:07:59.151565+00:00",
+    "reason": "user resumed goal after requested pause",
+    "checkpoint_sha256": "903b421c844818ad489fa89957c292f8e151239fa62b82ff9811198d1b1a30a0",
+    "reproducibility_note": "Restored model optimizer scaler Python NumPy Torch CUDA and DataLoader generator states; DataLoader worker augmentation RNG sequences may differ after epoch-boundary restart."
+  }
+]

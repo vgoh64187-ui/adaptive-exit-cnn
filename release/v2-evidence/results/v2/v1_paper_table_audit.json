@@ -1,0 +1,13 @@
+{
+  "scope": "V1 paper tables 1-4 and generated-table provenance; excludes narrative, figures and V2",
+  "paper_sha256": "37e796c9bd2a34d9aac78f38d08c41dd9fbe9611ed3787d2aa3f659c08f54ed7",
+  "table_provenance_sha256": "e61485787fbf0447ac21a8113d0e5f4e0d98ade73e9eefd55d22e258407d4740",
+  "settings_provenance_sha256": "9bd24789b4f35982817b5ad57499846feffe6e7b5063d47888a4b19bd874c9d5",
+  "tables_verified": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "numeric_bindings_verified": 119
+}

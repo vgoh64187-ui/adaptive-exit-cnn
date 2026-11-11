@@ -1,0 +1,76 @@
+{
+  "scope": "same V1 data, with missing-seed error bars omitted and n=1 annotated",
+  "source_sha256": "6f8eaa75a16e75674872e812a855fed60f37e3462d6722c6fb3347f4533803e0",
+  "records": [
+    {
+      "exit": 1,
+      "metric": "coverage",
+      "n": 3,
+      "values_percent": [
+        49.29,
+        54.64,
+        49.79
+      ],
+      "mean_percent": 51.24,
+      "sample_sd_percent": 2.955080371157442
+    },
+    {
+      "exit": 2,
+      "metric": "coverage",
+      "n": 3,
+      "values_percent": [
+        50.71,
+        35.29,
+        50.21
+      ],
+      "mean_percent": 45.403333333333336,
+      "sample_sd_percent": 8.761970858963943
+    },
+    {
+      "exit": 3,
+      "metric": "coverage",
+      "n": 3,
+      "values_percent": [
+        0.0,
+        10.07,
+        0.0
+      ],
+      "mean_percent": 3.356666666666667,
+      "sample_sd_percent": 5.813917210739532
+    },
+    {
+      "exit": 1,
+      "metric": "error",
+      "n": 3,
+      "values_percent": [
+        7.445729523897171,
+        9.205710142850876,
+        7.993572950363159
+      ],
+      "mean_percent": 8.215004205703735,
+      "sample_sd_percent": 0.9006424348233011
+    },
+    {
+      "exit": 2,
+      "metric": "error",
+      "n": 3,
+      "values_percent": [
+        41.45139157772064,
+        34.57069993019104,
+        41.58534109592438
+      ],
+      "mean_percent": 39.20247753461202,
+      "sample_sd_percent": 4.011796162689297
+    },
+    {
+      "exit": 3,
+      "metric": "error",
+      "n": 1,
+      "values_percent": [
+        72.09533452987671
+      ],
+      "mean_percent": 72.09533452987671,
+      "sample_sd_percent": null
+    }
+  ]
+}

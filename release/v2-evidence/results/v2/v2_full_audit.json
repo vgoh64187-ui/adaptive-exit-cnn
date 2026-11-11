@@ -1,0 +1,61 @@
+{
+  "scope": "exploratory V2 frozen per-sample audit",
+  "runs": [
+    {
+      "run": "residual_seed42",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "460d7679b7bf10ad3f07a581db1d307adf9ac2b83e3c98ab4d4753b268e398c2",
+      "metrics_sha256": "ac4aa219398167aa67c2dcbc870c06711f7e41fcefdb783a2b1b8f432e808032",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_kd_seed42",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "c4579fd7eee6a2d2aa55810d7b6d820f20fdaff3fe94aed8dadde85e2599139c",
+      "metrics_sha256": "ba1faf7f58704550d7c0dd6bfcaadbc15940cbe129e613b3f583e5fdc6f27ab4",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_delayed_kd_seed42",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "3ac92cc145ede2479eec0408312d14204c71ecd88a33983aca0f60b6e4044775",
+      "metrics_sha256": "43b3fd24271350afbaeeb867665143812ce1784c8dbc858858be5291865e6962",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_seed17",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "143820af745cedba3bd13855a4e30f0175086017421abf87765ed08bbf6e88a8",
+      "metrics_sha256": "a81bae84b4cd80288d2cff18d7cfefa564c1acb06cd94e004c79237063abb2d2",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_kd_seed17",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "f9c00b60e189790c812f210fb73549ddbeb906d18cb7c1a1c4e709f32e63ed26",
+      "metrics_sha256": "c2385745c321c7a36d72f6b2aac9f557afedd819b5c10f1752ac8c5bfe01e518",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_seed73",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "c4e27061918a84f3cadd9a81dfe714087702c46f2470dacb6eaf32518c184db1",
+      "metrics_sha256": "54b592216dead88020922f43f42e6e03317b3eca904a154ffd7c3b8e6429ab07",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    },
+    {
+      "run": "residual_kd_seed73",
+      "n": 10000,
+      "policies_checked": 21,
+      "prediction_sha256": "af00039fee5d42f833812e1abd37725b2b6060092c3be22efbf9dfadac233790",
+      "metrics_sha256": "f55e14a239bbc89617efd8b31a86a30e8f6f30da40ebad70665b3bc840e07770",
+      "protocol_sha256": "614363008b74d82c2ccdafd5d31ac21553d62d0175c619d8ea3b7004b70e742b"
+    }
+  ]
+}
