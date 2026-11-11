@@ -1,0 +1,81 @@
+{
+  "scope": "seed 42 validation selection; exploratory, not independent test",
+  "runs": {
+    "residual_seed42": {
+      "weights_sha256": "ea9ded8b448493bcb2432755dcb3317e98c8a3aa87803df38abb929b6277227f",
+      "prediction_sha256": "75548e7b4bb198418bce0091dc67f78c0a8f1134099a01367bfc87ee5ad2ae39",
+      "policies_sha256": "c9f2be3e36d2b8b41706090337b079c96530bea23061244827d9c2979934d363",
+      "policies_verified": 21,
+      "budget_rows": [
+        {
+          "budget": 0.55,
+          "accuracy": 0.7184000015258789,
+          "cost_ratio": 0.5416030970596368,
+          "exit_counts": [
+            2250,
+            250,
+            0
+          ]
+        },
+        {
+          "budget": 0.65,
+          "accuracy": 0.7567999958992004,
+          "cost_ratio": 0.6406442481334685,
+          "exit_counts": [
+            1625,
+            477,
+            398
+          ]
+        },
+        {
+          "budget": 0.75,
+          "accuracy": 0.7631999850273132,
+          "cost_ratio": 0.7454610061756844,
+          "exit_counts": [
+            1125,
+            394,
+            981
+          ]
+        }
+      ]
+    },
+    "residual_kd_seed42": {
+      "weights_sha256": "fedaed234f3087e79df3c0a8ddd6731cc856fe2359e27a07a86de57bb593c5d0",
+      "prediction_sha256": "13e20c0554ccf013074a7092911cbb8f59bd1de68a8e2863a376dc1c0a4a7943",
+      "policies_sha256": "563979a69a760bc24974eb169cda3ef8a465e44524dbe5ae74d91d9a7e2cd04c",
+      "policies_verified": 21,
+      "budget_rows": [
+        {
+          "budget": 0.55,
+          "accuracy": 0.7347999811172485,
+          "cost_ratio": 0.5482746192275786,
+          "exit_counts": [
+            2250,
+            181,
+            69
+          ]
+        },
+        {
+          "budget": 0.65,
+          "accuracy": 0.7576000094413757,
+          "cost_ratio": 0.6263857498386949,
+          "exit_counts": [
+            1375,
+            1125,
+            0
+          ]
+        },
+        {
+          "budget": 0.75,
+          "accuracy": 0.7576000094413757,
+          "cost_ratio": 0.6263857498386949,
+          "exit_counts": [
+            1375,
+            1125,
+            0
+          ]
+        }
+      ]
+    }
+  }
+}

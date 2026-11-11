@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from v2.evaluate_v2 import sha
 from v2.train_v2 import source_hash
+from v2.select_screening import scores
 
 SOURCES = ("v2/train_v2.py", "v2/src/data.py", "v2/src/models.py",
            "v2/evaluate_v2.py", "v2/audit_v2.py", "v2/freeze_v2.py", "v2/select_screening.py",
@@ -57,9 +58,25 @@ def main():
             raise RuntimeError("Validation artifacts not bound to this run")
         entries[run.name] = {name: sha(run / name) for name in ARTIFACTS}
     sources = {path: sha(path) for path in SOURCES}
+    resume_events = Path("results/v2/run_resume_events.json")
+    if resume_events.exists():
+        json.loads(resume_events.read_text(encoding="utf-8"))
+        sources[resume_events.as_posix()] = sha(resume_events)
     selection = Path("runs_v2/screening_selection.json")
     if selection.exists():
-        sources[str(selection)] = sha(selection)
+        decision = json.loads(selection.read_text(encoding="utf-8"))
+        manifest = Path("v2/screening_manifest.json")
+        if (decision["manifest_sha256"] != sha(manifest)
+                or decision["selection_rule"] != json.loads(manifest.read_text(encoding="utf-8"))["selection_rule"]):
+            raise RuntimeError("Validation-selection manifest or rule changed")
+        candidates = [scores("residual_kd_seed42"), scores("residual_delayed_kd_seed42")]
+        if decision["candidates"] != candidates or decision["control"] != scores("residual_seed42"):
+            raise RuntimeError("Stored validation selection does not match policies")
+        selected = max(candidates, key=lambda x: (x["mean_accuracy"], -x["mean_cost"],
+                                                   x["run"] == "residual_kd_seed42"))
+        if decision["selected_kd"] != selected["run"]:
+            raise RuntimeError("Stored screening choice does not follow predeclared rule")
+        sources[selection.as_posix()] = sha(selection)
     lock = dict(status="frozen", frozen_at=datetime.now(timezone.utc).isoformat(),
                 scope="exploratory follow-up; CIFAR-100 official test results already known",
                 sources=sources, runs=entries)

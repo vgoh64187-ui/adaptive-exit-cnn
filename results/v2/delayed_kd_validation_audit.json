@@ -1,0 +1,8 @@
+{
+  "scope": "exploratory seed 42 validation selection audit",
+  "run": "residual_delayed_kd_seed42",
+  "weights_sha256": "f09d5ef52beb24a882ffcf9af07d66fa1fb86783b25a689785f68336351e52c8",
+  "prediction_sha256": "bb9004d30f4436402a7253ac7edf37f01b1b2b1dc363ac30378d072f98a391b8",
+  "policies_sha256": "61a552900a9b144edb310dfac1879818c951c6b0ee807c42a0a61792e45a0afa",
+  "policies_verified": 21
+}

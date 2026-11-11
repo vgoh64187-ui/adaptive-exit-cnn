@@ -1,12 +1,14 @@
 """Plot validation holdout routing costs and paired accuracies."""
 import json
+import hashlib
 from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-data = json.loads(Path("results/v2/routing_validation.json").read_text(encoding="utf-8"))
+source = Path("results/v2/routing_validation.json")
+data = json.loads(source.read_text(encoding="utf-8"))
 target = Path("figures/v2")
 target.mkdir(parents=True, exist_ok=True)
 plt.rcParams.update({"font.sans-serif": ["Microsoft YaHei", "SimHei", "DejaVu Sans"],
@@ -15,6 +17,7 @@ plt.rcParams.update({"font.sans-serif": ["Microsoft YaHei", "SimHei", "DejaVu Sa
 fig, axes = plt.subplots(2, 2, figsize=(9.5, 6.1), constrained_layout=True, sharey="row")
 colors = {"confidence21": "#367ab1", "confidence101": "#d57a23"}
 markers = {17:"o", 42:"s", 73:"^"}
+plotted = []
 for row, model in enumerate(("gap", "lg_kd")):
     for col, budget in enumerate((0.55, 0.65)):
         ax = axes[row, col]
@@ -30,6 +33,8 @@ for row, model in enumerate(("gap", "lg_kd")):
                 ax.plot(x, y, color="#bbc3ca", zorder=1, lw=.9)
                 for variant in colors:
                     pt = points[variant]
+                    plotted.append(dict(model=model,budget=budget,seed=run["seed"],variant=variant,
+                                        held_n=pt["n"],accuracy=pt["accuracy"],cost_ratio=pt["cost_ratio"]))
                     ax.scatter(pt["cost_ratio"]*100, pt["accuracy"]*100,
                                c=colors[variant], marker=markers[run["seed"]],
                                s=44, edgecolors="white", linewidths=.5, zorder=2)
@@ -48,4 +53,12 @@ legend += [Line2D([0],[0],marker=marker,color="#555",linestyle="none",label=f"ç§
 fig.legend(handles=legend, loc="outside lower center", ncol=5, frameon=False)
 for ext in ("png","pdf","svg"):
     fig.savefig(target/f"routing_validation_exploratory.{ext}", dpi=300, bbox_inches="tight")
+if len(plotted)!=24 or any(row["held_n"]!=1300 for row in plotted):
+    raise RuntimeError("Unexpected routing-validation points")
+sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
+metadata=dict(scope="exploratory internal validation, not an independent test",
+              source_sha256=sha(source),points=plotted,
+              image_sha256={ext:sha(target/f"routing_validation_exploratory.{ext}") for ext in ("png","pdf","svg")})
+(target/"routing_validation_exploratory.data.json").write_text(
+    json.dumps(metadata,indent=2,ensure_ascii=False),encoding="utf-8")
 print(target)

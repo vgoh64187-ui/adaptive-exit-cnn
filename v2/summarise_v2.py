@@ -21,6 +21,16 @@ def read_record(path,budget):
     if len(choices)!=1 or data["n"]!=10000:
         raise RuntimeError(f"Expected one confidence policy at {budget} for {path}")
     record=choices[0]["test"]
+    if len(record["exit_counts"])!=3 or sum(record["exit_counts"])!=record["n"]:
+        raise RuntimeError(f"Invalid exit counts for {path}")
+    expected_cost=sum(count*macs for count,macs in zip(record["exit_counts"],data["profile"]["exit_macs"])) / (
+        record["n"]*data["profile"]["backbone_macs"])
+    if abs(record["cost_ratio"]-expected_cost)>1e-7:
+        raise RuntimeError(f"Cost does not match exit counts for {path}")
+    accuracy_delta=record["accuracy"]-data["exit_accuracy"][-1]
+    outcome_delta=record["beneficial_early_exit_fraction"]-record["harmful_early_exit_fraction"]
+    if abs(accuracy_delta-outcome_delta)>1e-7:
+        raise RuntimeError(f"Early-exit outcomes do not reconcile with accuracy for {path}")
     return dict(seed=data["seed"],accuracy=record["accuracy"],cost_ratio=record["cost_ratio"],
                 exit_counts=record["exit_counts"],n=record["n"],
                 harmful_early_exit_fraction=record["harmful_early_exit_fraction"],

@@ -6,6 +6,10 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
+try:
+    from v2.figure_provenance import figure_metadata
+except ModuleNotFoundError:
+    from figure_provenance import figure_metadata
 
 data=json.loads(Path("results/v2/final_comparison.json").read_text(encoding="utf-8"))
 out=Path("figures/v2")
@@ -75,7 +79,15 @@ handles=[Line2D([0],[0],marker="o",color=c,linestyle="none",label=f"{int(float(b
 fig.legend(handles=handles,loc="outside lower center",ncol=3,title="验证目标预算",frameon=False)
 for ext in ("png","pdf","svg"):
     fig.savefig(out/f"v2_paired_effects.{ext}",dpi=300,bbox_inches="tight")
+for name in ("v2_budget_accuracy","v2_paired_effects"):
+    metadata=figure_metadata(name,Path("results/v2/final_comparison.json"),out/(name+".png"))
+    (out/(name+".data.json")).write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding="utf-8")
 print(out)
 
 import subprocess, sys
 subprocess.run([sys.executable,"-m","v2.plot_v2_latency"],check=True)
+subprocess.run([sys.executable,"-m","v2.plot_learning_curves"],check=True)
+subprocess.run([sys.executable,"-m","v2.plot_exit_risk"],check=True)
+if not Path("results/v2/final_feature_analysis.json").exists():
+    subprocess.run([sys.executable,"-m","v2.features_final"],check=True)
+subprocess.run([sys.executable,"-m","v2.plot_features_final"],check=True)
