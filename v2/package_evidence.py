@@ -56,6 +56,7 @@ for row in audits["runs"]:
             raise RuntimeError("Frozen artifact changed: " + row["run"] + "/" + name)
 
 paths = [lock_path, root / "runs_v2/screening_selection.json", audit_path, summary_path,
+         root / "data/split_cifar100.json",
          paper_audit_path, root / "results/v2/run_resume_events.json",
          root / "results/v2/v1_full_audit.json", root / "results/v2/v1_paper_table_audit.json",
          root / "results/v2/v1_revision_table_audit.json", root / "results/v2/v1_figure_data_audit.json",
@@ -88,7 +89,7 @@ for path in paths:
 readme = ("# V2 实验记录包\n\n"
           "本目录保留冻结协议、验证选型、七次运行的配置与训练日志、策略、测试指标和审核记录。"
           "根目录内路径与项目原路径对应。各文件的 SHA-256 见 manifest.json。\n\n"
-          "为控制仓库体积，本包不含 CIFAR-100 数据、模型权重、优化器检查点和逐图预测缓存；"
+          "本包含固定数据划分索引，不含 CIFAR-100 原始图像、模型权重、优化器检查点和逐图预测缓存；"
           "仅凭本包不能重新计算逐图指标或逐字节还原训练。复核单样本结果需要另外取得与冻结散列匹配的文件；"
           "从头训练可依照项目 README 和 v2/README.md 执行，随机增强与设备差异可能改变结果。\n\n"
           "V2 使用此前已查看的同一官方测试集，结果为探索性补充。验证预算与测试实际平均计算比应分别解释。\n")
