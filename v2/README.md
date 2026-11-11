@@ -55,7 +55,7 @@ v2.freeze_v2 在测试前检验完整轮次、训练源文件哈希、验证缓�
 2. 保留选中的蒸馏配置，分别用种子 17、73 训练无蒸馏残差组和选中蒸馏组，并生成四组验证预测。`python v2/continue_screening.py` 可在三组种子 42 完成后执行这一串行流程，随后冻结七次运行并逐一开展探索性测试；恢复已有实验前仍须确认没有其他同目录训练进程。不要在冻结前手动执行 V2 测试。
 3. 运行 `python -m v2.audit_after_screening`，在所有测试结果齐全后复算逐图结果。运行 `python v2/benchmark_after_screening.py` 在审核完成后执行计时；该计时脚本需要 CUDA GPU、CPU 及原单出口基线权重，测量应避开其他训练负载。
 4. 运行 `python v2/summarise_after_screening.py`，等待审核和计时完成后生成三种子汇总、图表和论文源。最终测试为此前已经使用过的 CIFAR-100 测试集，属于探索性结果；验证预算目标和测试实际成本需同时报告。重新运行前应保存或移走旧输出，脚本对关键结果使用不覆盖策略。
-5. 在安装上述 Word 依赖的 Windows 环境中，使用 `python v2/build_word_omml.py paper/report_v2.md <输出.docx>`，再运行 `python v2/verify_paper.py <输出.docx>` 核对表格、图引用和公式数量。运行需要相应论文源、汇总 JSON 和图像文件；视觉排版仍需逐页检查。示例命令不能绕过训练、冻结、测试与审核，也不能将模拟试排数据作为正式结果。
+5. 在 Windows 环境运行 `python -m pip install -r v2/requirements-word.txt` 安装已验证的 Word 依赖，并确认 Microsoft Office 已安装其 `MML2OMML.XSL`。使用 `python v2/build_word_omml.py paper/report_v2.md <输出.docx>`，再运行 `python v2/verify_paper.py <输出.docx>` 核对表格、图引用和公式数量。运行需要相应论文源、汇总 JSON 和图像文件；视觉排版仍需逐页检查。示例命令不能绕过训练、冻结、测试与审核，也不能将模拟试排数据作为正式结果。
 
 `screen_queue.py`、`continue_screening.py` 和各 `*_after_screening.py` 是等待并推进流程的辅助程序，使用前应先检查是否已有同一程序或同一训练目录的进程，避免重复运行。`v2/word_after_screening.py` 使用本机 Codex 文档工具与临时依赖目录，主要服务于当前工作环境；跨机器复现应采用上面的 Word 生成器命令，并自行安装依赖。
 
